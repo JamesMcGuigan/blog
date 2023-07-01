@@ -1,0 +1,5 @@
+# pip-compile; pip install -r requirements.txt
+
+nbdev
+jupyter
+jupyterlab-quarto
