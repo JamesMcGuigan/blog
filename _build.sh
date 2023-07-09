@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # Build/Deploy instructions for Vercel
 set -x
+pwd
+ls -la
 
 # python3 -m venv venv
 # source ./venv/bin/activate
