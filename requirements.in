@@ -1,11 +1,11 @@
 # pip-compile; pip install -r requirements.txt
 
 quarto
-# jupyter
-# jupyterlab-quarto
-# markdown
-# folium
-# numpy
-# pandas
-# matplotlib
-# nbformat
+jupyter
+jupyterlab-quarto
+markdown
+folium
+numpy
+pandas
+matplotlib
+nbformat
