@@ -1,5 +1,3 @@
-# pip-compile; pip install -r requirements.txt
-
 quarto
 jupyter
 jupyterlab-quarto
