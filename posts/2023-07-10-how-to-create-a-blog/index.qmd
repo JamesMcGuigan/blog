@@ -1,0 +1,12 @@
+---
+title: "How to Create a Blog"
+author: "James McGuigan"
+date: "2023-07-10"
+categories: [quarto, gh-pages, devops]
+image: "https://quarto.org/quarto.png"
+---
+
+
+# How to Create a Blog
+
+First attempt at a new page
