@@ -2,22 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://github.com/JamesMcGuigan/blog/about.html</loc>
-    <lastmod>2023-07-10T08:45:18.610Z</lastmod>
+    <lastmod>2023-07-10T08:54:14.999Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/JamesMcGuigan/blog/posts/2023-07-10-how-to-create-a-blog/index.html</loc>
-    <lastmod>2023-07-10T08:45:17.266Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/JamesMcGuigan/blog/index.html</loc>
-    <lastmod>2023-07-10T08:45:16.674Z</lastmod>
+    <loc>https://github.com/JamesMcGuigan/blog/posts/2023-07-10-second-post.html</loc>
+    <lastmod>2023-07-10T08:54:13.639Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/JamesMcGuigan/blog/posts/welcome/index.html</loc>
-    <lastmod>2023-07-10T08:45:16.982Z</lastmod>
+    <lastmod>2023-07-10T08:54:13.055Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/JamesMcGuigan/blog/index.html</loc>
+    <lastmod>2023-07-10T08:54:12.755Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/JamesMcGuigan/blog/posts/2023-07-10-how-to-create-a-blog/index.html</loc>
+    <lastmod>2023-07-10T08:54:13.351Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/JamesMcGuigan/blog/posts/post-with-code/index.html</loc>
-    <lastmod>2023-07-10T08:45:18.322Z</lastmod>
+    <lastmod>2023-07-10T08:54:14.711Z</lastmod>
   </url>
 </urlset>
