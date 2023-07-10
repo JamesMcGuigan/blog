@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 # Build/Deploy instructions for Vercel
+# BROKEN: https://github.com/orgs/vercel/discussions/3165
+
 set -x
 pwd
 ls -la
