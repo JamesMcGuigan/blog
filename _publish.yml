@@ -1,0 +1,5 @@
+destination:
+  provider: github
+  # settings:
+  #  <setting_1>: <value_1>
+  #  <setting_2>: <value_2>
