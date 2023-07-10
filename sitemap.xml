@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://blog.jamesmcguigan.com/about.html</loc>
-    <lastmod>2023-07-10T08:26:16.849Z</lastmod>
+    <loc>https://github.com/JamesMcGuigan/blog/about.html</loc>
+    <lastmod>2023-07-10T08:29:13.512Z</lastmod>
   </url>
   <url>
-    <loc>https://blog.jamesmcguigan.com/posts/welcome/index.html</loc>
-    <lastmod>2023-07-10T08:26:15.537Z</lastmod>
+    <loc>https://github.com/JamesMcGuigan/blog/posts/welcome/index.html</loc>
+    <lastmod>2023-07-10T08:29:12.208Z</lastmod>
   </url>
   <url>
-    <loc>https://blog.jamesmcguigan.com/index.html</loc>
-    <lastmod>2023-07-10T08:26:15.245Z</lastmod>
+    <loc>https://github.com/JamesMcGuigan/blog/index.html</loc>
+    <lastmod>2023-07-10T08:29:11.916Z</lastmod>
   </url>
   <url>
-    <loc>https://blog.jamesmcguigan.com/posts/post-with-code/index.html</loc>
-    <lastmod>2023-07-10T08:26:16.569Z</lastmod>
+    <loc>https://github.com/JamesMcGuigan/blog/posts/post-with-code/index.html</loc>
+    <lastmod>2023-07-10T08:29:13.240Z</lastmod>
   </url>
 </urlset>
