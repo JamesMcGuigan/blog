@@ -1,0 +1,16 @@
+---
+title: "Blog"
+listing:
+  contents: blog
+  sort: "date desc"         # DOCS: https://quarto.org/docs/websites/website-listings.html#sorting-items
+  type: default # grid # table # default
+  # fields: [date, title, reading-time, image]  
+  categories: true
+  sort-ui:    true
+  filter-ui:  true
+  image-height: 5em
+page-layout: full           # DOCS: https://quarto.org/docs/output-formats/page-layout.html
+title-block-banner: false
+---
+
+

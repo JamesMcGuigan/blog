@@ -5,7 +5,7 @@ website:
   title: "blog.jamesmcguigan.com"
   navbar:
     right:
-      - about.qmd
+      - index.qmd
       - icon: linkedin
         href: https://www.linkedin.com/in/jamesmcguigan/
       - icon: github
@@ -13,7 +13,11 @@ website:
       - icon: kaggle
         href: https://www.kaggle.com/jamesmcguigan
       - icon: twitter
-        href: https://www.linkedin.com/in/jamesmcguigan/        
+        href: https://www.linkedin.com/in/jamesmcguigan/
+
+    left:
+      - href: blog.qmd
+
 format:
   html:
     theme: cosmo
