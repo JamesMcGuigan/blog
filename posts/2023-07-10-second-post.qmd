@@ -1,0 +1,12 @@
+---
+title: "Second Post"
+author: "James McGuigan"
+date: "2023-07-10"
+categories: [status]
+image: "https://2ndclassstamp.co.uk/wp-content/uploads/2015/07/IMG_20150721_0006.jpg"
+---
+
+
+# How to Create a Blog
+
+First attempt at a new page
