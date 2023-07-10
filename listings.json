@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/2023-07-10-how-to-create-a-blog/index.html",
       "/posts/post-with-code/index.html",
       "/posts/welcome/index.html"
     ]
