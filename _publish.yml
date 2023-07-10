@@ -1,5 +1,4 @@
 destination:
   provider: github
-  # settings:
-  #  <setting_1>: <value_1>
-  #  <setting_2>: <value_2>
+  repo:     JamesMcGuigan/blog.jamesmcguigan.com
+  dir:      _site
