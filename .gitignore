@@ -4,4 +4,4 @@ venv
 /quarto-*/
 /_site/
 /_freeze/
-
+/.luarc.json
