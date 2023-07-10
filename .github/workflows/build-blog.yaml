@@ -92,4 +92,5 @@ jobs:
           
           quarto publish gh-pages --no-prompt
         env:
-          GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+          # Check "Read and write permissions" enabled in Settings -> Actions -> General -> Workflow permissions:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
