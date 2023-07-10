@@ -1,1 +1,1 @@
-Sitemap: https://JamesMcGuigan.github.io/blog.jamesmcguigan.com/sitemap.xml
+Sitemap: https://github.com/JamesMcGuigan/blog.jamesmcguigan.com/sitemap.xml
