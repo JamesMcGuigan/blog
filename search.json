@@ -2,16 +2,16 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "James McGuigan",
     "section": "",
-    "text": "About this blog"
+    "text": "My intrinsic motivation is to solve ever more complex and valuable problems; this requires me to remain constantly learning and forever seeking greater mastery"
   },
   {
     "objectID": "posts/2023-07-10-second-post.html",
     "href": "posts/2023-07-10-second-post.html",
     "title": "Second Post",
     "section": "",
-    "text": "How to Create a Blog\nFirst attempt at a new page"
+    "text": "Second Post\nIt is possible to create a post inside a directory with an index.qmd file.\nThis second post tests if a .qmd file in the top-level directory also works"
   },
   {
     "objectID": "posts/welcome/index.html",
@@ -23,9 +23,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "blog.jamesmcguigan.com",
+    "title": "Blog",
     "section": "",
-    "text": "How to Create a Blog\n\n\n\n\n\n\n\nquarto\n\n\ngh-pages\n\n\ndevops\n\n\n\n\n\n\n\n\n\n\n\nJul 10, 2023\n\n\nJames McGuigan\n\n\n\n\n\n\n  \n\n\n\n\nSecond Post\n\n\n\n\n\n\n\nstatus\n\n\n\n\n\n\n\n\n\n\n\nJul 10, 2023\n\n\nJames McGuigan\n\n\n\n\n\n\n  \n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJul 9, 2023\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJul 6, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "How to Create a Blog\n\n\n\n\n\n\n\nquarto\n\n\ngh-pages\n\n\ndevops\n\n\n\n\n\n\n\n\n\n\n\nJul 10, 2023\n\n\nJames McGuigan\n\n\n\n\n\n\n  \n\n\n\n\nSecond Post\n\n\n\n\n\n\n\nstatus\n\n\ntest\n\n\n\n\n\n\n\n\n\n\n\nJul 10, 2023\n\n\nJames McGuigan\n\n\n\n\n\n\n  \n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJul 9, 2023\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJul 6, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/2023-07-10-how-to-create-a-blog/index.html",
