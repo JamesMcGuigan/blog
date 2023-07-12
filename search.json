@@ -7,6 +7,27 @@
     "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nHow to Create a Blog\n\n\n\n\n\n\n\nquarto\n\n\ngh-pages\n\n\ndevops\n\n\n\n\n\n\n\n\n\n\n\nJul 10, 2023\n\n\nJames McGuigan\n\n\n\n\n\n\n  \n\n\n\n\nSecond Post\n\n\n\n\n\n\n\nstatus\n\n\ntest\n\n\n\n\n\n\n\n\n\n\n\nJul 10, 2023\n\n\nJames McGuigan\n\n\n\n\n\n\n  \n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJul 9, 2023\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJul 6, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
   },
   {
+    "objectID": "docs/blogging/quarto/index.html",
+    "href": "docs/blogging/quarto/index.html",
+    "title": "Quarto",
+    "section": "",
+    "text": "Index page"
+  },
+  {
+    "objectID": "docs/index.html",
+    "href": "docs/index.html",
+    "title": "Documentation",
+    "section": "",
+    "text": "Welcome to my documentation page"
+  },
+  {
+    "objectID": "docs/index.html#documentation",
+    "href": "docs/index.html#documentation",
+    "title": "Documentation",
+    "section": "",
+    "text": "Welcome to my documentation page"
+  },
+  {
     "objectID": "blog/2023-07-10-second-post.html",
     "href": "blog/2023-07-10-second-post.html",
     "title": "Second Post",
@@ -40,5 +61,26 @@
     "title": "Post With Code",
     "section": "",
     "text": "This is a post with executable code.\n\n1 + 1\n\n2"
+  },
+  {
+    "objectID": "docs/blogging/index.html",
+    "href": "docs/blogging/index.html",
+    "title": "Blogging",
+    "section": "",
+    "text": "Here I discuss the mechanics of setting up a blogging platform"
+  },
+  {
+    "objectID": "docs/blogging/index.html#blogging",
+    "href": "docs/blogging/index.html#blogging",
+    "title": "Blogging",
+    "section": "",
+    "text": "Here I discuss the mechanics of setting up a blogging platform"
+  },
+  {
+    "objectID": "docs/blogging/quarto/01_Introduction_to_Quarto.html",
+    "href": "docs/blogging/quarto/01_Introduction_to_Quarto.html",
+    "title": "Introduction to Quarto",
+    "section": "",
+    "text": "Test page"
   }
 ]

@@ -2,26 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://github.com/JamesMcGuigan/blog/blog.html</loc>
-    <lastmod>2023-07-10T14:32:21.407Z</lastmod>
+    <lastmod>2023-07-12T03:33:03.126Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/JamesMcGuigan/blog/docs/blogging/quarto/index.html</loc>
+    <lastmod>2023-07-12T03:33:02.222Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/JamesMcGuigan/blog/docs/index.html</loc>
+    <lastmod>2023-07-12T03:33:01.686Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/JamesMcGuigan/blog/blog/2023-07-10-second-post.html</loc>
-    <lastmod>2023-07-10T14:32:19.839Z</lastmod>
+    <lastmod>2023-07-12T03:33:00.362Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/JamesMcGuigan/blog/blog/welcome/index.html</loc>
-    <lastmod>2023-07-10T14:32:19.279Z</lastmod>
+    <lastmod>2023-07-12T03:32:59.750Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/JamesMcGuigan/blog/index.html</loc>
-    <lastmod>2023-07-10T14:32:18.971Z</lastmod>
+    <lastmod>2023-07-12T03:32:59.422Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/JamesMcGuigan/blog/blog/2023-07-10-how-to-create-a-blog/index.html</loc>
-    <lastmod>2023-07-10T14:32:19.559Z</lastmod>
+    <lastmod>2023-07-12T03:33:00.054Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/JamesMcGuigan/blog/blog/post-with-code/index.html</loc>
-    <lastmod>2023-07-10T14:32:20.843Z</lastmod>
+    <lastmod>2023-07-12T03:33:01.414Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/JamesMcGuigan/blog/docs/blogging/index.html</loc>
+    <lastmod>2023-07-12T03:33:01.954Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/JamesMcGuigan/blog/docs/blogging/quarto/01_Introduction_to_Quarto.html</loc>
+    <lastmod>2023-07-12T03:33:02.534Z</lastmod>
   </url>
 </urlset>
