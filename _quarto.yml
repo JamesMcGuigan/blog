@@ -69,8 +69,10 @@ format:
     theme:
       dark:  vapor  # darkly
       light: pulse  # quartz # flatly
-    css: assets/styles.css
     toc: true
     toc-depth: 5
+    css: assets/styles.css
+    include-in-header: assets/MemberSpace.html
+
 
 
