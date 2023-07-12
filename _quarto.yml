@@ -1,11 +1,20 @@
+# Example: https://github.com/fastai/nbdev/blob/master/nbs/_quarto.yml
+# Example: https://github.com/quarto-dev/quarto-web/blob/main/_quarto.yml
+
 project:
   type: website
+  preview:
+    port: 3000
+    browser: true
 
 website:
   title: "blog.jamesmcguigan.com"
+  twitter-card: true
+  open-graph: true
+  repo-actions: [issue]    
   navbar:
     right:
-      - index.qmd
+      - href: index.qmd
       - icon: linkedin
         href: https://www.linkedin.com/in/jamesmcguigan/
       - icon: github
@@ -16,12 +25,33 @@ website:
         href: https://www.linkedin.com/in/jamesmcguigan/
 
     left:
-      - href: blog.qmd
+      - text: Blog
+        href: blog.qmd
+      - text: Documentation
+        href: docs/index.qmd
+
+  # DOCS: https://quarto.org/docs/websites/website-navigation.html#hybrid-navigation
+  sidebar:
+    - title: Default Empty  # hide sidebar on untitled pages
+
+    - title: Blog           # match | text: Blog
+      style: floating
+      contents:
+        - "blog.qmd"
+        - auto: "blog/**/*.qmd"
+
+    - title: Documentation  # match | text: Documentation
+      collapse-level: 5
+      style: docked
+      contents:
+        - "docs/index.qmd"
+        - auto: "docs/**/*.qmd"
 
 format:
   html:
     theme: cosmo
     css: styles.css
-
+    toc: true
+    toc-depth: 5
 
 
