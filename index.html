@@ -74,15 +74,25 @@ ga('send', {
   'anonymizeIp': true,
 });
 </script>
+<script>
+// NOTE: This is a client-side javascript-only paywall
+var MemberSpace = window.MemberSpace || {"subdomain": "jamesmcguigan"};
+(function (d) {
+    var s = d.createElement("script");
+    s.src = "https://cdn.memberspace.com/scripts/widgets.js";
+    var e = d.getElementsByTagName("script")[0];
+    e.parentNode.insertBefore(s, e);
+}(document));
+</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="assets/styles.css">
 <meta property="og:title" content="James McGuigan">
 <meta property="og:description" content="">
-<meta property="og:image" content="profile.jpg">
+<meta property="og:image" content="https://github.com/JamesMcGuigan/blog/profile.jpg">
 <meta name="twitter:title" content="James McGuigan">
 <meta name="twitter:description" content="">
-<meta name="twitter:image" content="profile.jpg">
+<meta name="twitter:image" content="https://github.com/JamesMcGuigan/blog/profile.jpg">
 <meta name="twitter:creator" content="@JamesMcGuigan42">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -100,7 +110,7 @@ ga('send', {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html" rel="" target="">
+    <a class="nav-link" href="./blog/index.html" rel="" target="">
  <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
