@@ -8,21 +8,34 @@ project:
     browser: true
 
 website:
-  title: "blog.jamesmcguigan.com"
-  twitter-card: true
+  # title: "blog.jamesmcguigan.com"
   open-graph: true
-  repo-actions: [issue]    
+  twitter-card:
+    creator: "@JamesMcGuigan42"
+  google-analytics: "UA-27712984-4"
+
+  # https://quarto.org/docs/websites/website-navigation.html#github-links
+  repo-url:     https://github.com/JamesMcGuigan/blog
+  repo-branch:  master
+  repo-actions: [issue, edit]
+
+  # DOCS: https://quarto.org/docs/websites/website-search.html
+  search:
+    location: navbar    # navbar, sidebar
+    type:     textbox   # overlay, textbox
+    copy-button: false
+
   navbar:
     right:
       - href: index.qmd
+      - icon: twitter
+        href: https://www.linkedin.com/in/jamesmcguigan/
       - icon: linkedin
         href: https://www.linkedin.com/in/jamesmcguigan/
       - icon: github
         href: https://github.com/JamesMcGuigan
       - icon: kaggle
         href: https://www.kaggle.com/jamesmcguigan
-      - icon: twitter
-        href: https://www.linkedin.com/in/jamesmcguigan/
 
     left:
       - text: Blog
@@ -32,24 +45,29 @@ website:
 
   # DOCS: https://quarto.org/docs/websites/website-navigation.html#hybrid-navigation
   sidebar:
-    - title: Default Empty  # hide sidebar on untitled pages
+    - title: Default  # hide sidebar on untitled pages
+      style: docked   # floating
+      alignment: center
+      search: true
+      border: true
+      collapse-level: 5
 
-    - title: Blog           # match | text: Blog
-      style: floating
+
+    - title: Blog           # match | left.text: Blog
       contents:
         - "blog.qmd"
         - auto: "blog/**/*.qmd"
 
     - title: Documentation  # match | text: Documentation
-      collapse-level: 5
-      style: docked
       contents:
         - "docs/index.qmd"
         - auto: "docs/**/*.qmd"
 
 format:
   html:
-    theme: cosmo
+    theme:
+      dark:  vapor  # darkly
+      light: pulse  # quartz # flatly
     css: styles.css
     toc: true
     toc-depth: 5
