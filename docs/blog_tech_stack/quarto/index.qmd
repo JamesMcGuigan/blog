@@ -1,5 +1,3 @@
 ---
 title: Quarto
 ---
-
-Index page
