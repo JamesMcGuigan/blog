@@ -39,7 +39,7 @@ website:
 
     left:
       - text: Blog
-        href: blog.qmd
+        href: blog/index.qmd
       - text: Documentation
         href: docs/index.qmd
 
@@ -55,7 +55,7 @@ website:
 
     - title: Blog           # match | left.text: Blog
       contents:
-        - "blog.qmd"
+        - "blog/index.qmd"
         - auto: "blog/**/*.qmd"
 
     - title: Documentation  # match | text: Documentation
@@ -65,10 +65,11 @@ website:
 
 format:
   html:
+    page-layout: article
     theme:
       dark:  vapor  # darkly
       light: pulse  # quartz # flatly
-    css: styles.css
+    css: assets/styles.css
     toc: true
     toc-depth: 5
 
