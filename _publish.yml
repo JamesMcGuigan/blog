@@ -1,4 +1,4 @@
 destination:
   provider: github
-  repo:     JamesMcGuigan/blog.jamesmcguigan.com
+  repo:     JamesMcGuigan/blog
   dir:      _site
