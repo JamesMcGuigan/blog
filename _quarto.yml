@@ -72,7 +72,9 @@ format:
     toc: true
     toc-depth: 5
     css: assets/styles.css
-    include-in-header: assets/MemberSpace.html
+    include-in-header:
+      - assets/MemberSpace.html
+      # - assets/MemberStack.html  # UNUSED: requires ES6 import
 
 
 

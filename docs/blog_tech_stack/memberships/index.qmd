@@ -1,0 +1,39 @@
+---
+title: Membership Paywalls
+---
+
+# Platforms
+
+Hosting paid membership content, such as a book or online-course, requires implementing a membership paywall.
+
+Many of them are designed around wordpress or the major CMS website builders,
+but only offer client-side javascript paywalls for static-html websites, 
+which can be easily defeated by knowing the URL and disabling browser Javascript.  
+
+- [MemberSpace](https://www.memberspace.com/pricing/)
+  - Startup Plan = $0/month + 5% transaction fee
+  - Pro Plan = $49/month + 5% transaction fee 
+  - Client-side javascript paywall for static-html websites 
+  - Quarto Implementation: [MemberSpace.html](https://github.com/JamesMcGuigan/blog/blob/master/assets/MemberSpace.html)
+
+- [Memberful](https://memberful.com/pricing/)
+  - Startup Plan = $0/month + 10% transaction fee
+  - Pro Plan = $25/month + 5% transaction fee
+  
+- [MemberStack](https://www.memberstack.com/pricing)
+  - Basic = $29/month + 4% transaction fee
+  - Pro   = $49/month + 2% transaction fee
+  - More developer focused than other platforms
+  - [React](https://developers.memberstack.com/docs/dom-front-end-package) integration which is technically secure given that React fails to load without Javascript
+  - [Node API](https://developers.memberstack.com/docs/admin-package/admin-package-node.js)
+  - [make.com](https://www.make.com/) integration
+
+
+# Middleware
+
+Ideally, a server-side paywall proxy or middleware layer would be required.   
+
+
+# Untested Possibilities
+
+- (Webflow)[https://developers.webflow.com/docs]
