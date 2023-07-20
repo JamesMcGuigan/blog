@@ -17,7 +17,7 @@ website:
   # https://quarto.org/docs/websites/website-navigation.html#github-links
   repo-url:     https://github.com/JamesMcGuigan/blog
   repo-branch:  master
-  repo-actions: [issue, edit]
+  repo-actions: [edit]  # [issue, edit]
 
   # DOCS: https://quarto.org/docs/websites/website-search.html
   search:
