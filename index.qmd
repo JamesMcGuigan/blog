@@ -4,19 +4,6 @@ image: assets/profile.jpg
 about:
   template: jolla
   links:
-#    - icon: twitter
-#      text: Twitter
-#      href: https://www.linkedin.com/in/jamesmcguigan/
-#    - icon: linkedin
-#      text: LinkedIn
-#      href: https://www.linkedin.com/in/jamesmcguigan/
-#    - icon: github
-#      text: Github
-#      href: https://github.com/JamesMcGuigan
-#    - icon: kaggle
-#      text: Kaggle
-#      href: https://www.kaggle.com/jamesmcguigan
-
     - text: Twitter
       icon: twitter
       href: https://twitter.com/JamesMcGuigan42
