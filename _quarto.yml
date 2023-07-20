@@ -27,17 +27,20 @@ website:
 
   navbar:
     right:
-      - href: index.qmd
       - icon: twitter
-        href: https://www.linkedin.com/in/jamesmcguigan/
+        href: https://twitter.com/JamesMcGuigan42
       - icon: linkedin
         href: https://www.linkedin.com/in/jamesmcguigan/
       - icon: github
         href: https://github.com/JamesMcGuigan
       - icon: kaggle
         href: https://www.kaggle.com/jamesmcguigan
+      - icon: stackoverflow
+        href: https://stackoverflow.com/users/748503/james-mcguigan
 
     left:
+      - text: James McGuigan
+        href: index.qmd
       - text: Blog
         href: blog/index.qmd
       - text: Documentation
@@ -68,13 +71,10 @@ format:
     page-layout: article
     theme:
       light: pulse   # quartz # flatly # vapor
-      dark:  darkly  # darkly
+      # dark:  darkly  # darkly
     toc: true
     toc-depth: 5
     css: assets/styles.css
     include-in-header:
       - assets/MemberSpace.html
       # - assets/MemberStack.html  # UNUSED: requires ES6 import
-
-
-

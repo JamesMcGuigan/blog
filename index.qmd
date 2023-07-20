@@ -1,21 +1,38 @@
 ---
 title: "James McGuigan"
-image: profile.jpg
+image: assets/profile.jpg
 about:
   template: jolla
   links:
-    - icon: linkedin
-      text: LinkedIn
+#    - icon: twitter
+#      text: Twitter
+#      href: https://www.linkedin.com/in/jamesmcguigan/
+#    - icon: linkedin
+#      text: LinkedIn
+#      href: https://www.linkedin.com/in/jamesmcguigan/
+#    - icon: github
+#      text: Github
+#      href: https://github.com/JamesMcGuigan
+#    - icon: kaggle
+#      text: Kaggle
+#      href: https://www.kaggle.com/jamesmcguigan
+
+    - text: Twitter
+      icon: twitter
+      href: https://twitter.com/JamesMcGuigan42
+    - text: LinkedIn
+      icon: linkedin
       href: https://www.linkedin.com/in/jamesmcguigan/
-    - icon: github
-      text: Github
+    - text: Github
+      icon: github
       href: https://github.com/JamesMcGuigan
-    - icon: kaggle
-      text: Kaggle
+    - text: Kaggle
+      icon: kaggle
       href: https://www.kaggle.com/jamesmcguigan
-    - icon: twitter
-      text: Twitter
-      href: https://www.linkedin.com/in/jamesmcguigan/
+    - text: StackOverflow
+      icon: stackoverflow
+      href: https://stackoverflow.com/users/748503/james-mcguigan
+
 ---
 
 My intrinsic motivation is to solve ever more complex and valuable problems; this requires me to remain constantly learning and forever seeking greater mastery
