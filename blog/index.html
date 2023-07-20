@@ -73,9 +73,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -121,9 +121,11 @@ var MemberSpace = window.MemberSpace || {"subdomain": "jamesmcguigan"};
 
 <link rel="stylesheet" href="../assets/styles.css">
 <meta property="og:title" content="Blog">
+<meta property="og:image" content="https://quarto.org/quarto.png">
 <meta name="twitter:title" content="Blog">
+<meta name="twitter:image" content="https://quarto.org/quarto.png">
 <meta name="twitter:creator" content="@JamesMcGuigan42">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -229,7 +231,7 @@ var MemberSpace = window.MemberSpace || {"subdomain": "jamesmcguigan"};
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(0)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="devops">devops <span class="quarto-category-count">(1)</span></div><div class="category" data-category="gh-pages">gh-pages <span class="quarto-category-count">(1)</span></div><div class="category" data-category="quarto">quarto <span class="quarto-category-count">(1)</span></div><div class="category" data-category="status">status <span class="quarto-category-count">(1)</span></div><div class="category" data-category="test">test <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content column-body" id="quarto-document-content">
 
@@ -256,13 +258,110 @@ var MemberSpace = window.MemberSpace || {"subdomain": "jamesmcguigan"};
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-title" data-direction="asc">
+          Title
+        </option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+         <option value="listing-author" data-direction="asc">
+          Author
+        </option>
+     </select>
+  </div>
     <div class="input-group input-group-sm quarto-listing-filter">
       <span class="input-group-text"><i class="bi bi-search"></i></span>
       <input type="text" class="search form-control" placeholder="Filter">
     </div>
 </div>
 <div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="quarto,gh-pages,devops" data-listing-date-sort="1688947200000" data-listing-file-modified-sort="1689816490296" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../blog/2023-07-10-how-to-create-a-blog/index.html"> <img src="https://quarto.org/quarto.png" class="thumbnail-image" style="height: 5em;"> </a></p>
+</div>
+<div class="body">
+<a href="../blog/2023-07-10-how-to-create-a-blog/index.html">
+<h3 class="no-anchor listing-title">
+How to Create a Blog
+</h3>
+<div class="listing-subtitle">
 
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('quarto'); return false;">
+quarto
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('gh-pages'); return false;">
+gh-pages
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('devops'); return false;">
+devops
+</div>
+</div>
+<a href="../blog/2023-07-10-how-to-create-a-blog/index.html">
+<div class="listing-description">
+First attempt at a new page
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../blog/2023-07-10-how-to-create-a-blog/index.html">
+<div class="listing-date">
+Jul 10, 2023
+</div>
+<div class="listing-author">
+James McGuigan
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="status,test" data-listing-date-sort="1688947200000" data-listing-file-modified-sort="1689816490296" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../blog/2023-07-10-second-post.html"> <img src="https://2ndclassstamp.co.uk/wp-content/uploads/2015/07/IMG_20150721_0006.jpg" class="thumbnail-image" style="height: 5em;"> </a></p>
+</div>
+<div class="body">
+<a href="../blog/2023-07-10-second-post.html">
+<h3 class="no-anchor listing-title">
+Second Post
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('status'); return false;">
+status
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('test'); return false;">
+test
+</div>
+</div>
+<a href="../blog/2023-07-10-second-post.html">
+<div class="listing-description">
+It is possible to create a post inside a directory with an index.qmd file.
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../blog/2023-07-10-second-post.html">
+<div class="listing-date">
+Jul 10, 2023
+</div>
+<div class="listing-author">
+James McGuigan
+</div>
+</a>
+</div>
+</div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items
@@ -620,4 +719,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/JamesMcGuigan/blog/issues/new" class="toc-action">Report an issue</a></p><p><a href="https://github.com/JamesMcGuigan/blog/edit/master/blog/index.qmd" class="toc-action">Edit this page</a></p></div></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/JamesMcGuigan/blog/edit/master/blog/index.qmd" class="toc-action">Edit this page</a></p></div></div></div></div></footer></body></html>
