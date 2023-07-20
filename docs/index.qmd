@@ -2,6 +2,4 @@
 title: "Documentation"
 ---
 
-## Documentation
-
 Welcome to my documentation page
