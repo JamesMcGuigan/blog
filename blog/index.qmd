@@ -1,7 +1,7 @@
 ---
 title: "Blog"
 listing:
-  contents: blog
+  contents: .
   sort: "date desc"         # DOCS: https://quarto.org/docs/websites/website-listings.html#sorting-items
   type: default # grid # table # default
   # fields: [date, title, reading-time, image]  
