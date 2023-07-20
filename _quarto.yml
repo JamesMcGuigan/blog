@@ -67,8 +67,8 @@ format:
   html:
     page-layout: article
     theme:
-      dark:  vapor  # darkly
-      light: pulse  # quartz # flatly
+      light: pulse   # quartz # flatly # vapor
+      dark:  darkly  # darkly
     toc: true
     toc-depth: 5
     css: assets/styles.css
