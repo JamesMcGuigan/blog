@@ -5,7 +5,7 @@ project:
   type: website
   preview:
     port: 3000
-    browser: true
+    browser: false
 
 website:
   # title: "blog.jamesmcguigan.com"

@@ -1,8 +1,6 @@
 ---
-title: Quarto
+title: Quarto Links
 ---
-
-## Links 
 
 ### Documentation
 

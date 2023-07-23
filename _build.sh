@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Quarto CICD Build/Deploy Script
 # Netify: WORKS
-# Vercel: https://github.com/orgs/vercel/discussions/3165
+# Vercel: WORKS: https://github.com/orgs/vercel/discussions/3165
 
 set -x
 pwd

@@ -1,0 +1,36 @@
+---
+title: Vercel Quarto build.sh
+tags:  [ vercel quarto CICD ]
+---
+
+I've got a Quarto working CICD script working in both Netify and Vercel
+
+Download Quarto into GitHub - [quarto.org/docs/download](https://quarto.org/docs/download)
+
+```bash
+mkdir .install
+cd    .install
+wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.3.433/quarto-1.3.433-linux-amd64.tar.gz
+git add .
+```
+
+Quarto CICD Build/Deploy Script
+- [_build.sh](/_build.sh)
+```bash
+#!/usr/bin/env bash
+set -x
+pwd
+ls -la
+
+# python3 -m venv venv
+# source ./venv/bin/activate
+python3 -m pip install -r requirements.txt
+tar xzf .install/quarto-1.3.433-linux-amd64.tar.gz -C .install
+.install/quarto-1.3.433/bin/quarto render .
+```
+
+Configure in Vercel project settings 
+
+- [https://vercel.com/jamesmcguigan/blog-jamesmcguigan-master/settings](https://vercel.com/jamesmcguigan/blog-jamesmcguigan-master/settings)
+- Build: bash ./_build.sh
+- Output: _site
