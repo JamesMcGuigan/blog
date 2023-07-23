@@ -7,6 +7,48 @@
     "text": "Platforms\nHosting paid membership content, such as a book or online-course, requires implementing a membership paywall.\nMany of them are designed around wordpress or the major CMS website builders, but only offer client-side javascript paywalls for static-html websites, which can be easily defeated by knowing the URL and disabling browser Javascript.\n\nMemberSpace\n\nStartup Plan = $0/month + 5% transaction fee\nPro Plan = $49/month + 5% transaction fee\nClient-side javascript paywall for static-html websites\nQuarto Implementation: MemberSpace.html\n\nMemberful\n\nStartup Plan = $0/month + 10% transaction fee\nPro Plan = $25/month + 5% transaction fee\n\nMemberStack\n\nBasic = $29/month + 4% transaction fee\nPro = $49/month + 2% transaction fee\nMore developer focused than other platforms\nReact integration which is technically secure given that React fails to load without Javascript\nNode API\nmake.com integration\n\n\n\n\nMiddleware\nIdeally, a server-side paywall proxy or middleware layer would be required.\n\n\nUntested Possibilities\n\n(Webflow)[https://developers.webflow.com/docs]"
   },
   {
+    "objectID": "docs/blog_tech_stack/quarto/quarto-links.html",
+    "href": "docs/blog_tech_stack/quarto/quarto-links.html",
+    "title": "Quarto Links",
+    "section": "",
+    "text": "Documentation\n\nhttps://quarto.org/docs/\nhttps://nbdev.fast.ai/\n\n\n\nYouTube\n\nDaniel Chen - Install Python. Quarto Render All the Things | PyData NYC 2022\nTracy Teal | These are a few of my favorite things (about Quarto presentations) | RStudio (2022)\nWelcome to Quarto Workshop! | Led by Tom Mock, RStudio"
+  },
+  {
+    "objectID": "docs/index.html",
+    "href": "docs/index.html",
+    "title": "Documentation",
+    "section": "",
+    "text": "Welcome to my documentation page"
+  },
+  {
+    "objectID": "blog/2023-07-10-how-to-create-a-blog/index.html",
+    "href": "blog/2023-07-10-how-to-create-a-blog/index.html",
+    "title": "How to Create a Blog",
+    "section": "",
+    "text": "How to Create a Blog\nFirst attempt at a new page"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "James McGuigan",
+    "section": "",
+    "text": "My intrinsic motivation is to solve ever more complex and valuable problems; this requires me to remain constantly learning and forever seeking greater mastery"
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nHow to Create a Blog\n\n\n\n\n\n\n\nquarto\n\n\ngh-pages\n\n\ndevops\n\n\n\n\n\n\n\n\n\n\n\nJul 10, 2023\n\n\nJames McGuigan\n\n\n\n\n\n\n  \n\n\n\n\nSecond Post\n\n\n\n\n\n\n\nstatus\n\n\ntest\n\n\n\n\n\n\n\n\n\n\n\nJul 10, 2023\n\n\nJames McGuigan\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog/2023-07-10-second-post.html",
+    "href": "blog/2023-07-10-second-post.html",
+    "title": "Second Post",
+    "section": "",
+    "text": "Second Post\nIt is possible to create a post inside a directory with an index.qmd file.\nThis second post tests if a .qmd file in the top-level directory also works"
+  },
+  {
     "objectID": "docs/blog_tech_stack/index.html",
     "href": "docs/blog_tech_stack/index.html",
     "title": "Blog Tech Stack",
@@ -21,52 +63,10 @@
     "text": "Here I discuss the mechanics of setting up a blogging platform"
   },
   {
-    "objectID": "blog/2023-07-10-second-post.html",
-    "href": "blog/2023-07-10-second-post.html",
-    "title": "Second Post",
+    "objectID": "docs/blog_tech_stack/quarto/quarto-vercel-build.sh.html",
+    "href": "docs/blog_tech_stack/quarto/quarto-vercel-build.sh.html",
+    "title": "Vercel Quarto build.sh",
     "section": "",
-    "text": "Second Post\nIt is possible to create a post inside a directory with an index.qmd file.\nThis second post tests if a .qmd file in the top-level directory also works"
-  },
-  {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nHow to Create a Blog\n\n\n\n\n\n\n\nquarto\n\n\ngh-pages\n\n\ndevops\n\n\n\n\n\n\n\n\n\n\n\nJul 10, 2023\n\n\nJames McGuigan\n\n\n\n\n\n\n  \n\n\n\n\nSecond Post\n\n\n\n\n\n\n\nstatus\n\n\ntest\n\n\n\n\n\n\n\n\n\n\n\nJul 10, 2023\n\n\nJames McGuigan\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "James McGuigan",
-    "section": "",
-    "text": "My intrinsic motivation is to solve ever more complex and valuable problems; this requires me to remain constantly learning and forever seeking greater mastery"
-  },
-  {
-    "objectID": "blog/2023-07-10-how-to-create-a-blog/index.html",
-    "href": "blog/2023-07-10-how-to-create-a-blog/index.html",
-    "title": "How to Create a Blog",
-    "section": "",
-    "text": "How to Create a Blog\nFirst attempt at a new page"
-  },
-  {
-    "objectID": "docs/index.html",
-    "href": "docs/index.html",
-    "title": "Documentation",
-    "section": "",
-    "text": "Welcome to my documentation page"
-  },
-  {
-    "objectID": "docs/blog_tech_stack/quarto/index.html",
-    "href": "docs/blog_tech_stack/quarto/index.html",
-    "title": "Quarto",
-    "section": "",
-    "text": "https://quarto.org/docs/\nhttps://nbdev.fast.ai/\n\n\n\n\n\nDaniel Chen - Install Python. Quarto Render All the Things | PyData NYC 2022\nTracy Teal | These are a few of my favorite things (about Quarto presentations) | RStudio (2022)\nWelcome to Quarto Workshop! | Led by Tom Mock, RStudio"
-  },
-  {
-    "objectID": "docs/blog_tech_stack/quarto/index.html#links",
-    "href": "docs/blog_tech_stack/quarto/index.html#links",
-    "title": "Quarto",
-    "section": "",
-    "text": "https://quarto.org/docs/\nhttps://nbdev.fast.ai/\n\n\n\n\n\nDaniel Chen - Install Python. Quarto Render All the Things | PyData NYC 2022\nTracy Teal | These are a few of my favorite things (about Quarto presentations) | RStudio (2022)\nWelcome to Quarto Workshop! | Led by Tom Mock, RStudio"
+    "text": "I’ve got a Quarto working CICD script working in both Netify and Vercel\nDownload Quarto into GitHub - quarto.org/docs/download\nmkdir .install\ncd    .install\nwget https://github.com/quarto-dev/quarto-cli/releases/download/v1.3.433/quarto-1.3.433-linux-amd64.tar.gz\ngit add .\nQuarto CICD Build/Deploy Script - _build.sh\n#!/usr/bin/env bash\nset -x\npwd\nls -la\n\n# python3 -m venv venv\n# source ./venv/bin/activate\npython3 -m pip install -r requirements.txt\ntar xzf .install/quarto-1.3.433-linux-amd64.tar.gz -C .install\n.install/quarto-1.3.433/bin/quarto render .\nConfigure in Vercel project settings\n\nhttps://vercel.com/jamesmcguigan/blog-jamesmcguigan-master/settings\nBuild: bash ./_build.sh\nOutput: _site"
   }
 ]
