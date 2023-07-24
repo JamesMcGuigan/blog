@@ -1,5 +1,9 @@
 [
   {
+    "listing": "/portfolio/index.html",
+    "items": []
+  },
+  {
     "listing": "/blog/index.html",
     "items": [
       "/blog/2023-07-10-how-to-create-a-blog/index.html",

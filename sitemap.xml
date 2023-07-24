@@ -2,38 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://github.com/JamesMcGuigan/blog/docs/blog_tech_stack/memberships/index.html</loc>
-    <lastmod>2023-07-23T22:24:38.764Z</lastmod>
+    <lastmod>2023-07-24T22:46:33.906Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/JamesMcGuigan/blog/docs/blog_tech_stack/quarto/quarto-links.html</loc>
-    <lastmod>2023-07-23T22:24:37.928Z</lastmod>
+    <lastmod>2023-07-24T22:46:32.754Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/JamesMcGuigan/blog/docs/index.html</loc>
-    <lastmod>2023-07-23T22:24:37.176Z</lastmod>
+    <lastmod>2023-07-24T22:46:32.114Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/JamesMcGuigan/blog/blog/2023-07-10-how-to-create-a-blog/index.html</loc>
-    <lastmod>2023-07-23T22:24:36.444Z</lastmod>
+    <lastmod>2023-07-24T22:46:31.450Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/JamesMcGuigan/blog/portfolio/index.html</loc>
+    <lastmod>2023-07-24T22:46:30.582Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/JamesMcGuigan/blog/index.html</loc>
-    <lastmod>2023-07-23T22:24:35.476Z</lastmod>
+    <lastmod>2023-07-24T22:46:30.218Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/JamesMcGuigan/blog/blog/index.html</loc>
-    <lastmod>2023-07-23T22:24:36.076Z</lastmod>
+    <lastmod>2023-07-24T22:46:31.110Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/JamesMcGuigan/blog/blog/2023-07-10-second-post.html</loc>
-    <lastmod>2023-07-23T22:24:36.816Z</lastmod>
+    <lastmod>2023-07-24T22:46:31.802Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/JamesMcGuigan/blog/docs/blog_tech_stack/index.html</loc>
-    <lastmod>2023-07-23T22:24:37.544Z</lastmod>
+    <lastmod>2023-07-24T22:46:32.422Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/JamesMcGuigan/blog/docs/blog_tech_stack/quarto/quarto-vercel-build.sh.html</loc>
-    <lastmod>2023-07-23T22:24:38.320Z</lastmod>
+    <lastmod>2023-07-24T22:46:33.090Z</lastmod>
   </url>
 </urlset>
