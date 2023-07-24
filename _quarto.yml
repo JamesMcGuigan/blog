@@ -41,6 +41,8 @@ website:
     left:
       - text: James McGuigan
         href: index.qmd
+      - text: Portfolio
+        href: portfolio/index.qmd
       - text: Blog
         href: blog/index.qmd
       - text: Documentation

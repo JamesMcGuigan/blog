@@ -1,0 +1,68 @@
+- category: Production Websites
+  description: |
+    I have built a range of websites over the years
+  tiles:
+    - title: jamesmcguigan.com
+      subtitle: this quarto website
+      href: https://www.jamesmcguigan.com/
+      code: https://github.com/JamesMcGuigan/blog
+      thumbnail: websites/jamesmcguigan.com.png
+
+    - title: starsfaq.com
+      subtitle: my first website from 2000
+      href: http://starsfaq.com/
+      code: https://github.com/JamesMcGuigan/starsfaq.com
+      thumbnail: websites/starsfaq.com.png
+
+    - title: liatandco.com
+      subtitle: Liat Rosenthal's website
+      href: http://liatandco.com/
+      code: https://github.com/JamesMcGuigan/liatandco.com
+      thumbnail: websites/liatandco.com.png
+
+
+- category: Tech Demo Websites
+  description: |
+    A series of website tech demos
+  tiles:
+    - title: fractals.jamesmcguigan.com
+      subtitle: Rust/Yew/WASM Fractal Generator
+      href: https://fractals.jamesmcguigan.com/
+      code: https://github.com/JamesMcGuigan/fractals
+      thumbnail: websites/fractals.jamesmcguigan.com.png
+
+    - title: tweets.jamesmcguigan.com
+      subtitle: ElasticSearch Maps Visualization
+      href: https://tweets.jamesmcguigan.com/
+      code: https://github.com/JamesMcGuigan/elasticsearch-tweets
+      thumbnail: websites/tweets.jamesmcguigan.com.png
+
+    - title: life.jamesmcguigan.com
+      subtitle: React Conway's Game of Life
+      href: https://life.jamesmcguigan.com/
+      code: https://github.com/JamesMcGuigan/react-cellular-automata
+      thumbnail: websites/life.jamesmcguigan.com.png
+
+    - title: cards.jamesmcguigan.com
+      subtitle: Angular2 One Card Draw
+      href: https://cards.jamesmcguigan.com/
+      code: https://github.com/JamesMcGuigan/angular2-card-games
+      thumbnail: websites/cards.jamesmcguigan.com.png
+
+    - title: mirror.jamesmcguigan.com
+      subtitle: HTML5 Mirror
+      href: https://mirror.jamesmcguigan.com/
+      code: https://github.com/jamesmcguigan/mirror.jamesmcguigan.com
+      thumbnail: websites/mirror.jamesmcguigan.com.png
+
+    - title: infographic.jamesmcguigan.com
+      subtitle: SVG Infographic Generator (MEAN stack)
+      href: https://infographic.jamesmcguigan.com/
+      code: https://github.com/JamesMcGuigan/infographic-generator
+      thumbnail:
+
+    - title: statistical-learning.jamesmcguigan.com
+      subtitle: Statistical Graph Generator (MEAN stack + d3.js/c3.js)
+      href: https://statistical-learning.jamesmcguigan.com/
+      code: https://github.com/JamesMcGuigan/statistical-learning
+      thumbnail:
