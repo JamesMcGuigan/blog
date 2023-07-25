@@ -6,33 +6,33 @@
     - title: jobs.nhs.uk
       subtitle: 2023 - NHS Jobs v3
       href: https://www.jobs.nhs.uk/candidate/search
-      thumbnail: websites/commercial/jobs.nhs.uk.png
+      thumbnail: screenshots/commercial/jobs.nhs.uk.png
 
     - title: ruh.livingmap.com
       subtitle: 2020 - Royal United Hospital LivingMap
       href: https://ruh.livingmap.com/
-      thumbnail: websites/commercial/ruh.livingmap.com.png
+      thumbnail: screenshots/commercial/ruh.livingmap.com.png
 
     - title: Credit Suisse
       subtitle: 2018 - Cypher Email Surveillance
       href: https://slideplayer.com/slide/14004566/
-      thumbnail: websites/commercial/credit-suisse.png
+      thumbnail: screenshots/commercial/credit-suisse.png
 
     - title: edgefolio.com
       subtitle: 2016 - Edgefolio.com
       href: http://web.archive.org/web/20161120140559/https://gottex.edgefolio.com/
-      thumbnail: websites/commercial/gottex.edgefolio.com.png
+      thumbnail: screenshots/commercial/gottex.edgefolio.com.png
 
     - title: premierleague.com
       subtitle: 2012 - Premier League - Webby Award Official Honoree
       href: https://web.archive.org/web/20160405024540/http://www.premierleague.com/en-gb/
       code: https://winners.webbyawards.com/2012/websites-and-mobile-sites/general-websites-and-mobile-sites/sports/148832/premier-league
-      thumbnail: websites/commercial/premierleague.com.png
+      thumbnail: screenshots/commercial/premierleague.com.png
 
     - title: ft.com
       subtitle: 2009 - Financial Times - Editorial WYSIWYG CMS
       href: https://www.ft.com/
-      thumbnail: websites/commercial/ft.com.png
+      thumbnail: screenshots/commercial/ft.com.png
 
 
 - category: Technology Demos
@@ -43,43 +43,43 @@
       subtitle: Rust/Yew/WASM Fractals
       href: https://fractals.jamesmcguigan.com/
       code: https://github.com/JamesMcGuigan/fractals
-      thumbnail: websites/fractals.jamesmcguigan.com.png
+      thumbnail: screenshots/fractals.jamesmcguigan.com.png
 
     - title: tweets.jamesmcguigan.com
       subtitle: ElasticSearch Maps Visualization
       href: https://tweets.jamesmcguigan.com/
       code: https://github.com/JamesMcGuigan/elasticsearch-tweets
-      thumbnail: websites/tweets.jamesmcguigan.com.png
+      thumbnail: screenshots/tweets.jamesmcguigan.com.png
 
     - title: life.jamesmcguigan.com
       subtitle: React Conway's Game of Life
       href: https://life.jamesmcguigan.com/
       code: https://github.com/JamesMcGuigan/react-cellular-automata
-      thumbnail: websites/life.jamesmcguigan.com.png
+      thumbnail: screenshots/life.jamesmcguigan.com.png
 
     - title: cards.jamesmcguigan.com
       subtitle: Angular2 One Card Draw
       href: https://cards.jamesmcguigan.com/
       code: https://github.com/JamesMcGuigan/angular2-card-games
-      thumbnail: websites/cards.jamesmcguigan.com.png
+      thumbnail: screenshots/cards.jamesmcguigan.com.png
 
     - title: mirror.jamesmcguigan.com
       subtitle: HTML5 Mirror
       href: https://mirror.jamesmcguigan.com/
       code: https://github.com/jamesmcguigan/mirror.jamesmcguigan.com
-      thumbnail: websites/mirror.jamesmcguigan.com.png
+      thumbnail: screenshots/mirror.jamesmcguigan.com.png
 
     - title: infographic.jamesmcguigan.com
       subtitle: SVG Infographic Generator (MEAN stack)
       href: https://infographic.jamesmcguigan.com/
       code: https://github.com/JamesMcGuigan/infographic-generator
-      thumbnail: websites/_broken.png
+      thumbnail: screenshots/_broken.png
 
     - title: statistical-learning.jamesmcguigan.com
       subtitle: Statistical Graph Generator (MEAN stack + d3.js/c3.js)
       href: https://statistical-learning.jamesmcguigan.com/
       code: https://github.com/JamesMcGuigan/statistical-learning
-      thumbnail: websites/_broken.png
+      thumbnail: screenshots/_broken.png
 
 
 - category: Personal Websites
@@ -90,40 +90,40 @@
       subtitle: 2023 - this quarto website
       href: https://www.jamesmcguigan.com/
       code: https://github.com/JamesMcGuigan/blog
-      thumbnail: websites/jamesmcguigan.com.png
+      thumbnail: screenshots/jamesmcguigan.com.png
 
     - title: liatandco.com
       subtitle: 2014 - Liat Rosenthal
       href: http://liatandco.com/
       code: https://github.com/JamesMcGuigan/liatandco.com
-      thumbnail: websites/liatandco.com.png
+      thumbnail: screenshots/liatandco.com.png
 
     - title: francescagiordano.com
       subtitle: 2007 - Francesca Giordano
       href: http://francescagiordano.com/
       code: https://github.com/JamesMcGuigan/francescagiordano.com
-      thumbnail: websites/francescagiordano.com.png
+      thumbnail: screenshots/francescagiordano.com.png
 
     - title: earthemergency.org
       subtitle: 2005 - Earth Emergency - A Call To Action
       href: http://liatandco.com/
       code: https://github.com/JamesMcGuigan/liatandco.com
-      thumbnail: websites/earthemergency.org.png
+      thumbnail: screenshots/earthemergency.org.png
 
     - title: sustainable-society.co.uk
       subtitle: 2004 - PHP Website Directory + MySQL CMS
       href: https://web.archive.org/web/20161021071844/http://www.sustainable-society.co.uk/
       code: https://github.com/JamesMcGuigan/sustainable-society.co.uk
-      thumbnail: websites/sustainable-society.co.uk.png
+      thumbnail: screenshots/sustainable-society.co.uk.png
 
     - title: fixgov.org
       subtitle: 2004 - eBook on sustainable living
       href: http://fixgov.org/
       code: https://github.com/JamesMcGuigan/fixgov.org
-      thumbnail: websites/fixgov.org.png
+      thumbnail: screenshots/fixgov.org.png
 
     - title: starsfaq.com
       subtitle: 2000 - 4X computer game Stars!
       href: http://starsfaq.com/
       code: https://github.com/JamesMcGuigan/starsfaq.com
-      thumbnail: websites/starsfaq.com.png
+      thumbnail: screenshots/starsfaq.com.png
