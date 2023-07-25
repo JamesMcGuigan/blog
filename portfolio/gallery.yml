@@ -9,13 +9,13 @@
       thumbnail: websites/jamesmcguigan.com.png
 
     - title: starsfaq.com
-      subtitle: 2000 - my first website on the 4X computer game Stars!
+      subtitle: 2000 - 4X computer game Stars!
       href: http://starsfaq.com/
       code: https://github.com/JamesMcGuigan/starsfaq.com
       thumbnail: websites/starsfaq.com.png
 
     - title: fixgov.org
-      subtitle: 2004 - Exchanging ideas on sustainable living and development at the FixGov Discussion Board
+      subtitle: 2004 - eBook on sustainable living
       href: http://fixgov.org/
       code: https://github.com/JamesMcGuigan/fixgov.org
       thumbnail: websites/fixgov.org.png
@@ -26,6 +26,12 @@
       code: https://github.com/JamesMcGuigan/liatandco.com
       thumbnail: websites/earthemergency.org.png
 
+    - title: francescagiordano.com
+      subtitle: 2007 - Francesca Giordano
+      href: http://francescagiordano.com/
+      code: https://github.com/JamesMcGuigan/francescagiordano.com
+      thumbnail: websites/francescagiordano.com.png
+
     - title: liatandco.com
       subtitle: 2014 - Liat Rosenthal
       href: http://liatandco.com/
@@ -33,13 +39,12 @@
       thumbnail: websites/liatandco.com.png
 
 
-
-- category: Tech Demo Websites
+- category: Technology Websites
   description: |
-    A series of website tech demos
+    This is me practicing my skills and showing what can be done inside a web browser with various technology stacks
   tiles:
     - title: fractals.jamesmcguigan.com
-      subtitle: Rust/Yew/WASM Fractal Generator
+      subtitle: Rust/Yew/WASM Fractals
       href: https://fractals.jamesmcguigan.com/
       code: https://github.com/JamesMcGuigan/fractals
       thumbnail: websites/fractals.jamesmcguigan.com.png
