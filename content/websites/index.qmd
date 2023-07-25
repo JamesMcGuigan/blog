@@ -1,9 +1,10 @@
 ---
-pagetitle: "Portfolio"
-format:
-  html:
-    toc: true
-#image: articles/advanced-layout-pdf.png
+title: "Websites"
+pagetitle: "Websites"
+# format:
+#  html:
+#    toc: true
+image: content/websites/screenshots/_broken.png
 search: true
 execute:
   echo: false
@@ -11,8 +12,6 @@ listing:
   - id: gallery
     template: gallery.ejs
     contents: gallery.yml
-description: |
-  My online portfolio of websites and technology projects
 ---
 
 

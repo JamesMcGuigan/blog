@@ -42,11 +42,11 @@ website:
       - text: James McGuigan
         href: index.qmd
       - text: Websites
-        href: websites/index.qmd
-      - text: Blog
-        href: blog/index.qmd
-      - text: Documentation
-        href: docs/index.qmd
+        href: content/websites/index.qmd
+      - text: Essays
+        href: content/essays/index.qmd
+      - text: Notes
+        href: content/notes/index.qmd
 
   # DOCS: https://quarto.org/docs/websites/website-navigation.html#hybrid-navigation
   sidebar:
@@ -58,15 +58,15 @@ website:
       collapse-level: 5
 
 
-    - title: Blog           # match | left.text: Blog
+    - title: Essays   # match | left.text: Essays
       contents:
-        - "blog/index.qmd"
-        - auto: "blog/**/*.qmd"
+        - "content/essays/index.qmd"
+        - auto: "content/essays/**/*.qmd"
 
-    - title: Documentation  # match | text: Documentation
+    - title: Notes  # match | left.text: Notes
       contents:
-        - "docs/index.qmd"
-        - auto: "docs/**/*.qmd"
+        - "content/notes/index.qmd"
+        - auto: "content/notes/**/*.qmd"
 
 format:
   html:

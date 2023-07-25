@@ -1,5 +1,5 @@
 ---
-title: "Blog"
+title: "Essays"
 listing:
   contents: .
   sort: "date desc"         # DOCS: https://quarto.org/docs/websites/website-listings.html#sorting-items
