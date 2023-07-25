@@ -1,43 +1,3 @@
-- category: Content Websites
-  description: |
-    I started building websites in the year 2000, and these are some of the websites I built along the way
-  tiles:
-    - title: jamesmcguigan.com
-      subtitle: this quarto website
-      href: https://www.jamesmcguigan.com/
-      code: https://github.com/JamesMcGuigan/blog
-      thumbnail: websites/jamesmcguigan.com.png
-
-    - title: starsfaq.com
-      subtitle: 2000 - 4X computer game Stars!
-      href: http://starsfaq.com/
-      code: https://github.com/JamesMcGuigan/starsfaq.com
-      thumbnail: websites/starsfaq.com.png
-
-    - title: fixgov.org
-      subtitle: 2004 - eBook on sustainable living
-      href: http://fixgov.org/
-      code: https://github.com/JamesMcGuigan/fixgov.org
-      thumbnail: websites/fixgov.org.png
-
-    - title: earthemergency.org
-      subtitle: 2005 - Earth Emergency - A Call To Action
-      href: http://liatandco.com/
-      code: https://github.com/JamesMcGuigan/liatandco.com
-      thumbnail: websites/earthemergency.org.png
-
-    - title: francescagiordano.com
-      subtitle: 2007 - Francesca Giordano
-      href: http://francescagiordano.com/
-      code: https://github.com/JamesMcGuigan/francescagiordano.com
-      thumbnail: websites/francescagiordano.com.png
-
-    - title: liatandco.com
-      subtitle: 2014 - Liat Rosenthal
-      href: http://liatandco.com/
-      code: https://github.com/JamesMcGuigan/liatandco.com
-      thumbnail: websites/liatandco.com.png
-
 
 - category: Technology Websites
   description: |
@@ -77,10 +37,58 @@
       subtitle: SVG Infographic Generator (MEAN stack)
       href: https://infographic.jamesmcguigan.com/
       code: https://github.com/JamesMcGuigan/infographic-generator
-      thumbnail:
+      thumbnail: websites/_broken.png
 
     - title: statistical-learning.jamesmcguigan.com
       subtitle: Statistical Graph Generator (MEAN stack + d3.js/c3.js)
       href: https://statistical-learning.jamesmcguigan.com/
       code: https://github.com/JamesMcGuigan/statistical-learning
-      thumbnail:
+      thumbnail: websites/_broken.png
+
+
+- category: Personal Websites
+  description: |
+    I started building websites in the year 2000, and these are some of the websites I built along the way
+  tiles:
+    - title: jamesmcguigan.com
+      subtitle: this quarto website
+      href: https://www.jamesmcguigan.com/
+      code: https://github.com/JamesMcGuigan/blog
+      thumbnail: websites/jamesmcguigan.com.png
+
+    - title: starsfaq.com
+      subtitle: 2000 - 4X computer game Stars!
+      href: http://starsfaq.com/
+      code: https://github.com/JamesMcGuigan/starsfaq.com
+      thumbnail: websites/starsfaq.com.png
+
+    - title: sustainable-society.co.uk
+      subtitle: 2004 - PHP Website Directory + MySQL CMS
+      href: https://web.archive.org/web/20161021071844/http://www.sustainable-society.co.uk/
+      code: https://github.com/JamesMcGuigan/sustainable-society.co.uk
+      thumbnail: websites/sustainable-society.co.uk.png
+
+    - title: fixgov.org
+      subtitle: 2004 - eBook on sustainable living
+      href: http://fixgov.org/
+      code: https://github.com/JamesMcGuigan/fixgov.org
+      thumbnail: websites/fixgov.org.png
+
+    - title: earthemergency.org
+      subtitle: 2005 - Earth Emergency - A Call To Action
+      href: http://liatandco.com/
+      code: https://github.com/JamesMcGuigan/liatandco.com
+      thumbnail: websites/earthemergency.org.png
+
+    - title: francescagiordano.com
+      subtitle: 2007 - Francesca Giordano
+      href: http://francescagiordano.com/
+      code: https://github.com/JamesMcGuigan/francescagiordano.com
+      thumbnail: websites/francescagiordano.com.png
+
+    - title: liatandco.com
+      subtitle: 2014 - Liat Rosenthal
+      href: http://liatandco.com/
+      code: https://github.com/JamesMcGuigan/liatandco.com
+      thumbnail: websites/liatandco.com.png
+
