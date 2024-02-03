@@ -63,10 +63,10 @@ website:
         - "content/essays/index.qmd"
         - auto: "content/essays/**/*.qmd"
 
-    - title: Notes  # match | left.text: Notes
+    - title: Projects  # match | left.text: Notes
       contents:
-        - "content/notes/index.qmd"
-        - auto: "content/notes/**/*.qmd"
+        - "content/projects/index.qmd"
+        - auto: "content/projects/**/*.qmd"
 
 format:
   html:
