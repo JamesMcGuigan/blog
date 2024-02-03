@@ -45,8 +45,8 @@ website:
         href: content/websites/index.qmd
       - text: Essays
         href: content/essays/index.qmd
-      - text: Notes
-        href: content/notes/index.qmd
+      - text: Projects
+        href: content/projects/index.qmd
 
   # DOCS: https://quarto.org/docs/websites/website-navigation.html#hybrid-navigation
   sidebar:
