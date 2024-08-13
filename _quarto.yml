@@ -80,6 +80,3 @@ format:
     include-in-header:
       - assets/MemberSpace.html
       # - assets/MemberStack.html  # UNUSED: requires ES6 import
-
-filters:
-  - toc-generator.lua
