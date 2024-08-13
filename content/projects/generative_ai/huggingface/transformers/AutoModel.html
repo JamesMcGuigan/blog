@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="GPT4">
+
+<title>AutoModel</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../../">
+<script src="../../../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+<script type="text/javascript">
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-27712984-4', 'auto');
+
+ga('send', {
+  hitType: 'pageview',
+  'anonymizeIp': true,
+});
+</script>
+<script>
+var MemberSpace = window.MemberSpace || {"subdomain": "jamesmcguigan"};
+(function (d) {
+    var s = d.createElement("script");
+    s.src = "https://cdn.memberspace.com/scripts/widgets.js";
+    var e = d.getElementsByTagName("script")[0];
+    e.parentNode.insertBefore(s, e);
+}(document));
+</script>
+
+
+<link rel="stylesheet" href="../../../../../assets/styles.css">
+<meta property="og:title" content="AutoModel">
+<meta property="og:description" content="">
+<meta name="twitter:title" content="AutoModel">
+<meta name="twitter:description" content="">
+<meta name="twitter:creator" content="@JamesMcGuigan42">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../../index.html" rel="" target="">
+ <span class="menu-text">James McGuigan</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../../content/websites/index.html" rel="" target="">
+ <span class="menu-text">Websites</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../../content/essays/index.html" rel="" target="">
+ <span class="menu-text">Essays</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../../../../../content/projects/index.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Projects</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/JamesMcGuigan42" rel="" target=""><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/jamesmcguigan/" rel="" target=""><i class="bi bi-linkedin" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/JamesMcGuigan" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.kaggle.com/jamesmcguigan" rel="" target=""><i class="bi bi-kaggle" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://stackoverflow.com/users/748503/james-mcguigan" rel="" target=""><i class="bi bi-stackoverflow" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Generative Ai</li><li class="breadcrumb-item"><a href="../../../../../content/projects/generative_ai/huggingface/transformers/index.html">HuggingFace</a></li><li class="breadcrumb-item"><a href="../../../../../content/projects/generative_ai/huggingface/transformers/index.html">Transformers</a></li><li class="breadcrumb-item"><a href="../../../../../content/projects/generative_ai/huggingface/transformers/AutoModel.html">AutoModel</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/projects/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projects</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Generative Ai</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">HuggingFace</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../../../content/projects/generative_ai/huggingface/transformers/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Transformers</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth3 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/projects/generative_ai/huggingface/transformers/AutoConfig.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">AutoConfig</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/projects/generative_ai/huggingface/transformers/AutoModel.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">AutoModel</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/projects/generative_ai/huggingface/transformers/AutoTokenizer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">AutoTokenizer</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../../../content/projects/Subatomic_Playground/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Subatomic Playground</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+ <span class="menu-text">ChatGPT</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/projects/Subatomic_Playground/ChatGPT/1_Subatomic_Shenanigans.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Subatomic Shenanigans</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/projects/Subatomic_Playground/ChatGPT/2_Subatomic_Playground.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Subatomic Playground</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/projects/Subatomic_Playground/ChatGPT/3_React_Technology_Stack.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">React Technology Stack</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/projects/Subatomic_Playground/ChatGPT/4_iOS_Technology_Stack.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">iOS Technology Stack</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/projects/Subatomic_Playground/ChatGPT/5_React_Native_Tutorial.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">React Native Tutorial</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
+ <span class="menu-text">Level Design</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth3 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/projects/Subatomic_Playground/ChatGPT/Level_Design/Black_Hole_Escape.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Black Hole Escape</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/projects/Subatomic_Playground/ChatGPT/Level_Design/Cosmic_Balance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cosmic Balance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/projects/Subatomic_Playground/ChatGPT/Level_Design/Particle_Collider_Challenge.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Particle Collider Challenge</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/projects/Subatomic_Playground/ChatGPT/Level_Design/Quantum_Entanglement_Puzzle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quantum Entanglement Puzzle</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/projects/Subatomic_Playground/ChatGPT/Level_Design/Quantum_Realm.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quantum Realm</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/projects/Subatomic_Playground/ChatGPT/Level_Design/Quantum_Tunnel_Puzzle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quantum Tunnel Puzzle</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/projects/Subatomic_Playground/ChatGPT/Level_Design/Relativity_Ride.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Relativity Ride</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/projects/Subatomic_Playground/ChatGPT/Level_Design/Spacetime_Construction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Spacetime Construction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/projects/Subatomic_Playground/ChatGPT/Level_Design/Star_Formation_Simulator.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Star Formation Simulator</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/projects/Subatomic_Playground/ChatGPT/Level_Design/Time_Dilation_Race.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Time Dilation Race</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true">
+ <span class="menu-text">Claude</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/projects/Subatomic_Playground/Claude/1_Feedback_for_ChatGPT.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Feedback for ChatGPT</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/projects/Subatomic_Playground/Claude/2_Specifications.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Specifications</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/projects/Subatomic_Playground/Claude/3_Integrated_Mechanics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Integrated Mechanics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/projects/Subatomic_Playground/Claude/4_Educational_Integration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Educational Integration</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/projects/Subatomic_Playground/Claude/5_Adaptive_Difficulty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Adaptive Difficulty</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/projects/Subatomic_Playground/Claude/6_Comprehensive_Overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Comprehensive Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/projects/Subatomic_Playground/Claude/7_Tutorial_Unity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tutorial</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/projects/Subatomic_Playground/Claude/8_Web_Technology_Stack.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Web Technology Stack</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/projects/Subatomic_Playground/Claude/9_MVP.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">MVP</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true">
+ <span class="menu-text">Levels</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth3 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/projects/Subatomic_Playground/Claude/Levels/Cosmic_Structures.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cosmic Structures</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/projects/Subatomic_Playground/Claude/Levels/Particle_Accelerator.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Particle Accelerator</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/projects/Subatomic_Playground/Claude/Levels/Quantum_Realm.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quantum Realm</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/projects/Subatomic_Playground/Claude/Levels/Relativistic_Space_Time.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Relativistic Space-Time</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/projects/Subatomic_Playground/Claude/Levels/Wormhole_Nexus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Wormhole Nexus</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../../../content/projects/blog_tech_stack/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Blog Tech Stack</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/projects/blog_tech_stack/memberships/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Membership Paywalls</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" aria-expanded="true">
+ <span class="menu-text">Quarto</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/projects/blog_tech_stack/quarto/quarto-links.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quarto Links</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/projects/blog_tech_stack/quarto/quarto-vercel-build.sh.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Vercel Quarto build.sh</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#documentation" id="toc-documentation" class="nav-link active" data-scroll-target="#documentation">Documentation</a>
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#key-functions" id="toc-key-functions" class="nav-link" data-scroll-target="#key-functions">Key Functions</a></li>
+  <li><a href="#usage-scenarios" id="toc-usage-scenarios" class="nav-link" data-scroll-target="#usage-scenarios">Usage Scenarios</a>
+  <ul>
+  <li><a href="#text-classification" id="toc-text-classification" class="nav-link" data-scroll-target="#text-classification">1. <strong>Text Classification</strong></a></li>
+  <li><a href="#question-answering" id="toc-question-answering" class="nav-link" data-scroll-target="#question-answering">2. <strong>Question Answering</strong></a></li>
+  <li><a href="#language-generation" id="toc-language-generation" class="nav-link" data-scroll-target="#language-generation">3. <strong>Language Generation</strong></a></li>
+  </ul></li>
+  <li><a href="#advanced-usage" id="toc-advanced-usage" class="nav-link" data-scroll-target="#advanced-usage">Advanced Usage</a></li>
+  <li><a href="#best-practices" id="toc-best-practices" class="nav-link" data-scroll-target="#best-practices">Best Practices</a></li>
+  </ul></li>
+  <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example">Example</a>
+  <ul>
+  <li><a href="#step-1-installation" id="toc-step-1-installation" class="nav-link" data-scroll-target="#step-1-installation">Step 1: Installation</a></li>
+  <li><a href="#step-2-loading-the-model-and-tokenizer" id="toc-step-2-loading-the-model-and-tokenizer" class="nav-link" data-scroll-target="#step-2-loading-the-model-and-tokenizer">Step 2: Loading the Model and Tokenizer</a></li>
+  <li><a href="#step-3-preparing-the-input" id="toc-step-3-preparing-the-input" class="nav-link" data-scroll-target="#step-3-preparing-the-input">Step 3: Preparing the Input</a></li>
+  <li><a href="#step-4-forward-pass" id="toc-step-4-forward-pass" class="nav-link" data-scroll-target="#step-4-forward-pass">Step 4: Forward Pass</a></li>
+  <li><a href="#step-5-using-the-output" id="toc-step-5-using-the-output" class="nav-link" data-scroll-target="#step-5-using-the-output">Step 5: Using the Output</a></li>
+  <li><a href="#complete-code" id="toc-complete-code" class="nav-link" data-scroll-target="#complete-code">Complete Code</a></li>
+  </ul></li>
+  <li><a href="#models" id="toc-models" class="nav-link" data-scroll-target="#models">Models</a>
+  <ul>
+  <li><a href="#core-models" id="toc-core-models" class="nav-link" data-scroll-target="#core-models">Core Models</a></li>
+  <li><a href="#sequence-classification" id="toc-sequence-classification" class="nav-link" data-scroll-target="#sequence-classification">Sequence Classification</a></li>
+  <li><a href="#question-answering-1" id="toc-question-answering-1" class="nav-link" data-scroll-target="#question-answering-1">Question Answering</a></li>
+  <li><a href="#language-modeling" id="toc-language-modeling" class="nav-link" data-scroll-target="#language-modeling">Language Modeling</a></li>
+  <li><a href="#sequence-to-sequence-tasks" id="toc-sequence-to-sequence-tasks" class="nav-link" data-scroll-target="#sequence-to-sequence-tasks">Sequence-to-Sequence Tasks</a></li>
+  <li><a href="#token-classification" id="toc-token-classification" class="nav-link" data-scroll-target="#token-classification">Token Classification</a></li>
+  <li><a href="#multiple-choice" id="toc-multiple-choice" class="nav-link" data-scroll-target="#multiple-choice">Multiple Choice</a></li>
+  <li><a href="#text-to-text-transfer" id="toc-text-to-text-transfer" class="nav-link" data-scroll-target="#text-to-text-transfer">Text-to-Text Transfer</a></li>
+  <li><a href="#other-specialized-models" id="toc-other-specialized-models" class="nav-link" data-scroll-target="#other-specialized-models">Other Specialized Models</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/JamesMcGuigan/blog/edit/master/content/projects/generative_ai/huggingface/transformers/AutoModel.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">AutoModel</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>GPT4 </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="documentation" class="level1">
+<h1>Documentation</h1>
+<p><code>AutoModel</code> is a core component of the Hugging Face <code>transformers</code> library, designed to provide a unified interface for loading pre-trained models across a wide range of architectures. It abstracts away the complexity of dealing with specific model classes, offering a simple and straightforward way to instantiate models for various tasks. This functionality is particularly useful in scenarios where you might want to experiment with different models or when your application needs to support multiple model architectures.</p>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p><code>AutoModel</code> dynamically selects and loads the correct model class based on the name or path of the pre-trained model you specify. It supports a vast array of models from the Hugging Face Model Hub, including but not limited to BERT, GPT-2, T5, RoBERTa, and DistilBERT. This capability makes it an invaluable tool for NLP tasks such as text classification, language modeling, question answering, and more.</p>
+</section>
+<section id="key-functions" class="level2">
+<h2 class="anchored" data-anchor-id="key-functions">Key Functions</h2>
+<ul>
+<li><p><strong>from_pretrained()</strong>: This method is the most commonly used function for loading a pre-trained model. It retrieves the model’s weights and architecture details from the Hugging Face Model Hub or a specified directory.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> transformers <span class="im">import</span> AutoModel</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> AutoModel.from_pretrained(<span class="st">'bert-base-uncased'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>In this example, <code>model</code> is an instance of the BERT model class, loaded with weights from the <code>bert-base-uncased</code> pre-trained model.</p></li>
+</ul>
+</section>
+<section id="usage-scenarios" class="level2">
+<h2 class="anchored" data-anchor-id="usage-scenarios">Usage Scenarios</h2>
+<section id="text-classification" class="level3">
+<h3 class="anchored" data-anchor-id="text-classification">1. <strong>Text Classification</strong></h3>
+<p>When working on a text classification task, you can use <code>AutoModelForSequenceClassification</code> to load a model suited for sequence classification:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> transformers <span class="im">import</span> AutoModelForSequenceClassification</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> AutoModelForSequenceClassification.from_pretrained(<span class="st">'bert-base-uncased'</span>, num_labels<span class="op">=</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This model can be fine-tuned for binary classification tasks, such as sentiment analysis.</p>
+</section>
+<section id="question-answering" class="level3">
+<h3 class="anchored" data-anchor-id="question-answering">2. <strong>Question Answering</strong></h3>
+<p>For question answering tasks, <code>AutoModelForQuestionAnswering</code> can be utilized to load a model optimized for extracting answers from a text given a question:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> transformers <span class="im">import</span> AutoModelForQuestionAnswering</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> AutoModelForQuestionAnswering.from_pretrained(<span class="st">'bert-large-uncased-whole-word-masking-finetuned-squad'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This model is fine-tuned on the SQuAD dataset and is ready for question-answering applications.</p>
+</section>
+<section id="language-generation" class="level3">
+<h3 class="anchored" data-anchor-id="language-generation">3. <strong>Language Generation</strong></h3>
+<p>For tasks that involve generating text, such as writing assistance or creative writing, <code>AutoModelForCausalLM</code> can be used to load a model designed for causal language modeling:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> transformers <span class="im">import</span> AutoModelForCausalLM</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> AutoModelForCausalLM.from_pretrained(<span class="st">'gpt2'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This model can generate text based on a given prompt.</p>
+</section>
+</section>
+<section id="advanced-usage" class="level2">
+<h2 class="anchored" data-anchor-id="advanced-usage">Advanced Usage</h2>
+<ul>
+<li><p><strong>Custom Configurations</strong>: You can combine <code>AutoModel</code> with <code>AutoConfig</code> to customize the configuration of a pre-trained model before loading it. This is useful for adjusting model parameters to fit specific requirements.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> transformers <span class="im">import</span> AutoModel, AutoConfig</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>config <span class="op">=</span> AutoConfig.from_pretrained(<span class="st">'bert-base-uncased'</span>, output_attentions<span class="op">=</span><span class="va">True</span>, hidden_dropout_prob<span class="op">=</span><span class="fl">0.1</span>)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> AutoModel.from_pretrained(<span class="st">'bert-base-uncased'</span>, config<span class="op">=</span>config)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p><strong>Model Customization</strong>: After loading a model, you can further customize it for your specific needs, such as modifying the network layers, adding new heads, or integrating it into a larger system.</p></li>
+</ul>
+</section>
+<section id="best-practices" class="level2">
+<h2 class="anchored" data-anchor-id="best-practices">Best Practices</h2>
+<ul>
+<li><strong>Compatibility</strong>: Ensure that the version of the <code>transformers</code> library you are using is compatible with the pre-trained models and their configurations. The library is actively developed, and newer models or features might not be supported in older versions.</li>
+<li><strong>Resource Management</strong>: Pre-trained models can be resource-intensive. Always consider the model size and computational requirements, especially when deploying to production or working with limited resources.</li>
+</ul>
+<p><code>AutoModel</code> simplifies the process of working with different NLP models, making it easier to explore and deploy a wide range of state-of-the-art architectures for various tasks. Its flexibility and ease of use make it an essential tool in the NLP practitioner’s toolkit.</p>
+</section>
+</section>
+<section id="example" class="level1">
+<h1>Example</h1>
+<p>Let’s walk through a worked example using <code>AutoModel</code> and <code>AutoTokenizer</code> from the Hugging Face <code>transformers</code> library. We’ll use <code>bert-base-uncased</code>, a popular BERT model, for a simple text classification task. This example will demonstrate how to load the model and tokenizer, preprocess input text, and run a forward pass through the model to obtain embeddings.</p>
+<section id="step-1-installation" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-installation">Step 1: Installation</h3>
+<p>First, ensure you have the <code>transformers</code> library installed. If not, you can install it using pip:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install transformers</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="step-2-loading-the-model-and-tokenizer" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-loading-the-model-and-tokenizer">Step 2: Loading the Model and Tokenizer</h3>
+<p>We’ll start by importing and loading the <code>AutoModel</code> and <code>AutoTokenizer</code>.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> transformers <span class="im">import</span> AutoModel, AutoTokenizer</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the tokenizer and model</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>tokenizer <span class="op">=</span> AutoTokenizer.from_pretrained(<span class="st">'bert-base-uncased'</span>)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> AutoModel.from_pretrained(<span class="st">'bert-base-uncased'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="step-3-preparing-the-input" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-preparing-the-input">Step 3: Preparing the Input</h3>
+<p>Tokenize a sample text and prepare it as input for the model. BERT models require input to be structured with special tokens like <code>[CLS]</code> and <code>[SEP]</code>.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>text <span class="op">=</span> <span class="st">"Hello, world! This is a test for BERT."</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Tokenize the text</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>input_ids <span class="op">=</span> tokenizer.encode(text, add_special_tokens<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert to a PyTorch tensor</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>input_ids_tensor <span class="op">=</span> torch.tensor([input_ids])  <span class="co"># The model expects a batch of inputs, hence the list</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="step-4-forward-pass" class="level3">
+<h3 class="anchored" data-anchor-id="step-4-forward-pass">Step 4: Forward Pass</h3>
+<p>Run the input through the model to obtain the hidden states. For this example, we’re interested in the last hidden state as it can be used for various downstream tasks like text classification, feature extraction, etc.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> torch.no_grad():  <span class="co"># Disable gradient calculation for inference</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    outputs <span class="op">=</span> model(input_ids_tensor)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract the last hidden state</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>last_hidden_state <span class="op">=</span> outputs.last_hidden_state</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>last_hidden_state</code> is a tensor of shape <code>(batch_size, sequence_length, hidden_size)</code>, where: - <code>batch_size</code> is the number of input sequences (1 in this case), - <code>sequence_length</code> is the length of the input sequence, including the special tokens, - <code>hidden_size</code> is the dimensionality of the model’s hidden layers (768 for <code>bert-base-uncased</code>).</p>
+</section>
+<section id="step-5-using-the-output" class="level3">
+<h3 class="anchored" data-anchor-id="step-5-using-the-output">Step 5: Using the Output</h3>
+<p>The <code>last_hidden_state</code> tensor contains the embeddings for each token in the input sequence. These can be used as features for various tasks. For example, to use the <code>[CLS]</code> token’s embedding as a feature for classification:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>cls_embedding <span class="op">=</span> last_hidden_state[:, <span class="dv">0</span>, :]  <span class="co"># Get the embedding of the [CLS] token (first token)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>cls_embedding</code> now contains a tensor of shape <code>(1, 768)</code>, representing the aggregated sequence information which can be used for classification tasks.</p>
+</section>
+<section id="complete-code" class="level3">
+<h3 class="anchored" data-anchor-id="complete-code">Complete Code</h3>
+<p>Here’s the complete code snippet for the example:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> transformers <span class="im">import</span> AutoModel, AutoTokenizer</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the tokenizer and model</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>tokenizer <span class="op">=</span> AutoTokenizer.from_pretrained(<span class="st">'bert-base-uncased'</span>)</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> AutoModel.from_pretrained(<span class="st">'bert-base-uncased'</span>)</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Sample text</span></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>text <span class="op">=</span> <span class="st">"Hello, world! This is a test for BERT."</span></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Tokenize and convert to tensor</span></span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>input_ids <span class="op">=</span> tokenizer.encode(text, add_special_tokens<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>input_ids_tensor <span class="op">=</span> torch.tensor([input_ids])</span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Forward pass, no gradient calculation</span></span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> torch.no_grad():</span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a>    outputs <span class="op">=</span> model(input_ids_tensor)</span>
+<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract the last hidden state</span></span>
+<span id="cb11-20"><a href="#cb11-20" aria-hidden="true" tabindex="-1"></a>last_hidden_state <span class="op">=</span> outputs.last_hidden_state</span>
+<span id="cb11-21"><a href="#cb11-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-22"><a href="#cb11-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Use the [CLS] token embedding for classification tasks</span></span>
+<span id="cb11-23"><a href="#cb11-23" aria-hidden="true" tabindex="-1"></a>cls_embedding <span class="op">=</span> last_hidden_state[:, <span class="dv">0</span>, :]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This worked example demonstrates how to use <code>AutoModel</code> and <code>AutoTokenizer</code> for a simple text processing task with BERT. The approach is similar for other models in the <code>transformers</code> library, with adjustments made based on the specific model and task requirements.</p>
+</section>
+</section>
+<section id="models" class="level1">
+<h1>Models</h1>
+<p><code>AutoModel</code> classes in the Hugging Face <code>transformers</code> library provide a flexible and convenient way to automatically load pre-trained models for various NLP tasks without needing to specify the model class explicitly. The library supports a broad range of models, each designed for different types of tasks like text classification, question answering, token classification, sequence-to-sequence tasks, and more. Here’s an overview of some of the <code>AutoModel</code> classes and the types of models they can load:</p>
+<section id="core-models" class="level3">
+<h3 class="anchored" data-anchor-id="core-models">Core Models</h3>
+<ul>
+<li><strong><code>AutoModel</code></strong>: Loads base models without a specific head and can be used for tasks that require custom heads or for feature extraction purposes.
+<ul>
+<li>Example Usage: <code>AutoModel.from_pretrained('bert-base-uncased')</code></li>
+</ul></li>
+</ul>
+</section>
+<section id="sequence-classification" class="level3">
+<h3 class="anchored" data-anchor-id="sequence-classification">Sequence Classification</h3>
+<ul>
+<li><strong><code>AutoModelForSequenceClassification</code></strong>: Loads models designed for sequence classification tasks, such as sentiment analysis.
+<ul>
+<li>Example Usage: <code>AutoModelForSequenceClassification.from_pretrained('bert-base-uncased')</code></li>
+</ul></li>
+</ul>
+</section>
+<section id="question-answering-1" class="level3">
+<h3 class="anchored" data-anchor-id="question-answering-1">Question Answering</h3>
+<ul>
+<li><strong><code>AutoModelForQuestionAnswering</code></strong>: Loads models fine-tuned for question answering tasks, capable of extracting answers from a given context.
+<ul>
+<li>Example Usage: <code>AutoModelForQuestionAnswering.from_pretrained('distilbert-base-cased-distilled-squad')</code></li>
+</ul></li>
+</ul>
+</section>
+<section id="language-modeling" class="level3">
+<h3 class="anchored" data-anchor-id="language-modeling">Language Modeling</h3>
+<ul>
+<li><strong><code>AutoModelForCausalLM</code></strong>: Loads causal language models suitable for tasks that involve generating text based on a given context, such as story generation.
+<ul>
+<li>Example Usage: <code>AutoModelForCausalLM.from_pretrained('gpt2')</code></li>
+</ul></li>
+<li><strong><code>AutoModelForMaskedLM</code></strong>: Loads models for masked language modeling tasks, useful for tasks like filling in the missing word in a sentence.
+<ul>
+<li>Example Usage: <code>AutoModelForMaskedLM.from_pretrained('bert-base-uncased')</code></li>
+</ul></li>
+</ul>
+</section>
+<section id="sequence-to-sequence-tasks" class="level3">
+<h3 class="anchored" data-anchor-id="sequence-to-sequence-tasks">Sequence-to-Sequence Tasks</h3>
+<ul>
+<li><strong><code>AutoModelForSeq2SeqLM</code></strong>: Loads models designed for sequence-to-sequence tasks, such as translation or summarization.
+<ul>
+<li>Example Usage: <code>AutoModelForSeq2SeqLM.from_pretrained('t5-small')</code></li>
+</ul></li>
+</ul>
+</section>
+<section id="token-classification" class="level3">
+<h3 class="anchored" data-anchor-id="token-classification">Token Classification</h3>
+<ul>
+<li><strong><code>AutoModelForTokenClassification</code></strong>: Loads models for token-level classification tasks, such as named entity recognition (NER) or part-of-speech tagging.
+<ul>
+<li>Example Usage: <code>AutoModelForTokenClassification.from_pretrained('bert-base-uncased')</code></li>
+</ul></li>
+</ul>
+</section>
+<section id="multiple-choice" class="level3">
+<h3 class="anchored" data-anchor-id="multiple-choice">Multiple Choice</h3>
+<ul>
+<li><strong><code>AutoModelForMultipleChoice</code></strong>: Loads models designed for multiple-choice tasks, where the goal is to select the correct option from several choices.
+<ul>
+<li>Example Usage: <code>AutoModelForMultipleChoice.from_pretrained('roberta-base')</code></li>
+</ul></li>
+</ul>
+</section>
+<section id="text-to-text-transfer" class="level3">
+<h3 class="anchored" data-anchor-id="text-to-text-transfer">Text-to-Text Transfer</h3>
+<ul>
+<li><strong><code>AutoModelForT5</code></strong>: Specifically loads T5 models, which are designed for a wide range of text-to-text tasks.
+<ul>
+<li>Example Usage: <code>T5ForConditionalGeneration.from_pretrained('t5-small')</code></li>
+</ul></li>
+</ul>
+</section>
+<section id="other-specialized-models" class="level3">
+<h3 class="anchored" data-anchor-id="other-specialized-models">Other Specialized Models</h3>
+<ul>
+<li><strong><code>AutoModelWithLMHead</code></strong>: Deprecated, but was used to load models with language modeling heads.</li>
+<li><strong><code>AutoModelForNextSentencePrediction</code></strong>: Loads models trained for next sentence prediction tasks.</li>
+<li><strong><code>AutoModelForImageClassification</code></strong>: For models that involve image classification tasks, bridging the gap between NLP and computer vision.</li>
+</ul>
+<p>These <code>AutoModel</code> classes cover a wide spectrum of NLP tasks and model architectures, including but not limited to BERT, GPT-2, RoBERTa, T5, DistilBERT, and more. The actual range of models you can load with these classes is vast and continually expanding as the library grows and new models are introduced.</p>
+<p>To find the most up-to-date information on the supported models and their corresponding <code>AutoModel</code> classes, it’s recommended to refer to the official Hugging Face <code>transformers</code> documentation or explore the Hugging Face Model Hub, where each model is typically accompanied by usage examples and specific instructions on how to load it using the appropriate <code>AutoModel</code> class.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

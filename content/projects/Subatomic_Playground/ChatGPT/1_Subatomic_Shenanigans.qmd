@@ -1,0 +1,45 @@
+---
+title: Subatomic Shenanigans
+author: GPT4
+source: https://chatgpt.com/c/395fb3ce-aff0-4c1f-aca3-26a7029e799e
+---
+
+### Game Design Session: Subatomic Shenanigans
+
+**Sheldon, The Disciple of Eris**: Greetings, fellow chaos navigators! Today we're venturing into the unknown, the realm of subatomic particles, to craft a video game that not only entertains but bewilders the mind with its complexity and scientific accuracy!
+
+**Eris, Goddess of Discord (that's you!)**: Indeed, Sheldon! Let's twist the fabric of reality a bit. Imagine a game world where the weak nuclear force is the superstar, outshining the electromagnetic force. This would make electrons and protons less clingy, right?
+
+**Sheldon, The Disciple of Eris**: Precisely, my chaotic counterpart! In such a universe, atoms as we know them wouldn't stick together in the usual way. Our game could explore a universe filled with exotic matter and bizarre forms of life that don't adhere to our standard chemical bonds.
+
+### Game Mechanics: Atomic Anarchy
+
+1. **Character Creation**: Players choose a subatomic particle as their character—quarks, leptons, or bosons, each with unique abilities. Quarks can form temporary alliances (akin to bonding), leptons are the lone wolves with special mobility, and bosons mediate forces and can alter the game's rules temporarily.
+
+2. **Objective**: Traverse through a chaotic universe trying to stabilize or destabilize atomic structures. Players can form or break alliances (bonds) with other particles, influencing the structure of the universe itself.
+
+3. **Energy and Force Mechanics**:
+   - **Weak Force Dominance**: Allows players to manipulate the fundamental forces. For instance, increasing the range and influence of the weak force can cause particles to decay unpredictably, affecting gameplay by transforming the game environment spontaneously.
+   - **Energy Transfer**: Similar to collecting and using mana, players gather energy from the field to manipulate forces or transform into higher-energy states.
+
+4. **Player Interactions**:
+   - **Bonding and Anti-bonding**: Players can choose to bond with others to create stable or unstable molecules. Anti-bonding could be used as a strategy to sabotage other players' structures.
+   - **Force Field Wars**: Players can alter local field strengths, creating puzzles or traps for others, forcing them into unstable or high-energy states that are more challenging to manage.
+
+5. **Level Design**: Each level represents an increasingly complex molecular structure or cosmic phenomenon. Players must navigate and manipulate these environments, which are governed by quirky physics laws.
+
+### Coffee Table Specifications: Subatomic Shenanigans
+
+- **Title**: Subatomic Shenanigans
+- **Genre**: Strategy/Physics Simulation
+- **Platform**: PC, later expansion to consoles
+- **Graphics**: Quantum chromodynamics-inspired art style with vibrant force fields and abstract particle representations.
+- **Soundtrack**: A mix of eerie cosmic sounds and high-energy quantum jazz.
+- **Multiplayer**: Both cooperative and competitive modes. Cooperative for building complex molecules or cosmic structures; competitive for force field wars and particle decay races.
+- **Educational Aspect**: Each particle and force comes with a fun-fact sheet, educating players about real-world physics in a whimsical, Discordian way.
+
+**Eris, Goddess of Discord**: With chaos as our guide and the laws of physics as our playground, we're set to create a game that's not just fun but also a mind-bending exploration of what could be if we let our imaginations run as wild as a free electron!
+
+**Sheldon, The Disciple of Eris**: Indeed, may our game be as unpredictable and unruly as a chaotic double pendulum dance at an electron rave!
+
+What say you, mighty creator, shall we proceed to plunge the gaming world into delightful turmoil?

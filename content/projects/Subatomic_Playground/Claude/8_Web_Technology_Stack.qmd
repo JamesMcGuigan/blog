@@ -1,0 +1,76 @@
+---
+title:  Web Technology Stack
+author: Claude
+source: https://claude.ai/chat/b10a6c34-86cb-4ed9-b2e7-7ddb90b434f4
+---
+
+Certainly! Here's a web and iOS technology stack for developing a version of "Subatomic Playground" that can run on both web browsers and iOS devices:
+
+Web/iOS Technology Stack:
+
+1. Core Framework: React Native with Expo
+
+   - Reason: Allows for cross-platform development (iOS and web) with a single codebase
+   - Benefits: Faster development, code reusability, large community support
+
+2. Programming Language: JavaScript/TypeScript
+
+   - TypeScript for type safety and better developer experience
+
+3. State Management: Redux
+
+   - For managing complex application state across different game areas
+
+4. 2D Graphics Rendering: React Native Skia
+
+   - High-performance 2D graphics library that works well with React Native
+
+5. Physics Engine: matter.js
+
+   - 2D physics engine that can be used with React Native
+
+6. Navigation: React Navigation
+
+   - For handling navigation between different game areas and screens
+
+7. UI Components: React Native Paper
+
+   - Material Design components for consistent UI across platforms
+
+8. Animations: React Native Reanimated
+
+   - For smooth, high-performance animations
+
+9. Data Persistence: AsyncStorage (React Native) / LocalStorage (Web)
+
+   - For saving game progress and settings
+
+10. Backend (if needed):
+
+    - Firebase
+      - Realtime Database for leaderboards or user data
+      - Authentication for user accounts
+      - Cloud Functions for server-side logic
+
+11. Development Environment:
+
+    - Expo CLI for easy development and testing
+    - Xcode for iOS-specific configurations and App Store deployment
+
+12. Version Control: Git with GitHub
+
+13. Testing:
+
+    - Jest for unit testing
+    - Detox for end-to-end testing on iOS
+
+14. Analytics: Firebase Analytics
+
+    - To track user engagement and game performance
+
+15. Deployment:
+
+    - iOS: App Store
+    - Web: Netlify or Vercel for easy deployment and hosting
+
+

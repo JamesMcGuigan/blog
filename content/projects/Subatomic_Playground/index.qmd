@@ -1,0 +1,32 @@
+---
+title: "Subatomic Playground"
+listing:
+  contents: .
+  sort: "file_path asc"
+  type: table
+  fields: [author, title]
+  table-striped: true
+  table-hover: true
+  categories: true
+  sort-ui: false
+  filter-ui: true
+---
+
+ChatGPT and Claude.ai computer game specifications inspired by:
+
+> "With the right programming, one could simulate a universe where the weak nuclear force has a greater range than the electromagnetic force. It might make for an interesting game."
+
+- ChatGPT Sheldon Cooper (Big Bang Theory S2E2 "The Codpiece Topology")
+
+![Gecha Cha](./img.png)
+
+Links:
+
+- [https://www.facebook.com/photo/?fbid=1057804965699739&set=a.134369431376635](https://www.facebook.com/photo/?fbid=1057804965699739&set=a.134369431376635)
+- [https://chatgpt.com/c/395fb3ce-aff0-4c1f-aca3-26a7029e799e](https://chatgpt.com/c/395fb3ce-aff0-4c1f-aca3-26a7029e799e)
+- [https://claude.ai/chat/b10a6c34-86cb-4ed9-b2e7-7ddb90b434f4](https://claude.ai/chat/b10a6c34-86cb-4ed9-b2e7-7ddb90b434f4)
+
+# Table of Contents
+
+:::{#listing-posts}
+:::
