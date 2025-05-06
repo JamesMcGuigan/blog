@@ -1,19 +1,19 @@
 ---
 title:  StringTheory ELI5
 author: ChatGPT
-source: https://chatgpt.com/share/681a03a6-8e10-8004-9f21-4b8f2cc384ab
+source: https://www.reddit.com/r/explainlikeimfive/comments/19rjhv/eli5_is_not_eli5_anymore/
+date:   2025-05-06
+categories: [physics, string theory]
 ---
 
-
- 
+> - Captunfortunate r/explainlikeimfive 12 yr. ago
+>
 > "The short version is that superstring theory is the union of supersymmetry and string theory math. Supersymmetry is an extension of something called the Standard Model of particle physics. The Standard Model is a theoretical framework that predicts the existence of all the known subatomic particles. Basically how it works is you crunch the numbers and the equations tell you there should be a type of quark with such-and-such mass and so on, then you go looking for it and you find it, and that's how you know the theory works. Only we suspect there are types of subatomic particles that have neither been observed in nature directly nor predicted by the Standard Model. (Dark matter is one reason for this suspicion, but it's only one, and it's a whole other conversation anyway.) Supersymmetry is a speculative theory that says maybe there's another symmetry to the Standard Model, and thus predicts the existence of a whole zoo of particles that we've never noticed. For every known type of particle, according to supersymmetry, there should be another particle that's similar to it but very different in some important ways."
 
-- r/explainlikeimfive Captunfortunate 12 yr. ago
-- https://www.reddit.com/r/explainlikeimfive/comments/19rjhv/eli5_is_not_eli5_anymore/
 
 ---
 
-ChatGPT:
+ChatGPT: [https://chatgpt.com/share/681a03a6-8e10-8004-9f21-4b8f2cc384ab](681a03a6-8e10-8004-9f21-4b8f2cc384ab)
 
 Alright, imagine you’re **five years old** and we’re playing with LEGO.
 

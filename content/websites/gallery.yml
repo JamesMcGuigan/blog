@@ -39,6 +39,11 @@
   description: |
     Me showing what can be done inside a web browser with various technology stacks
   tiles:
+    - title: discordian.art
+      subtitle: Chaos Sigil Magick Shop
+      href: https://discordian.art/
+      thumbnail: screenshots/discordian.art.png
+
     - title: fractals.jamesmcguigan.com
       subtitle: Rust/Yew/WASM Fractals
       href: https://fractals.jamesmcguigan.com/
@@ -127,3 +132,5 @@
       href: http://starsfaq.com/
       code: https://github.com/JamesMcGuigan/starsfaq.com
       thumbnail: screenshots/starsfaq.com.png
+
+
