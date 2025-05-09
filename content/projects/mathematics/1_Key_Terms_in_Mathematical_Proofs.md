@@ -3,9 +3,7 @@ title: Key Terms in Mathematical Proofs
 author: Claude Sonnet 3.7 
 date:   2025-05-09
 ---
-
-# Key Terms in Mathematical Proofs
->https://claude.ai/chat/849d3d43-c789-4fd1-b422-05dea160e7b5
+> https://claude.ai/chat/849d3d43-c789-4fd1-b422-05dea160e7b5
 
 Let me explain these important concepts in mathematical reasoning:
 

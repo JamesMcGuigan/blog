@@ -3,9 +3,7 @@ title: Onto Surjective Functions
 author: Claude Sonnet 3.7
 date:   2025-05-09
 ---
-
-# Onto (Surjective) Functions: A Deeper Exploration
-- https://claude.ai/chat/58319eb7-d3f3-4dfe-9df5-9d327451081c
+> https://claude.ai/chat/58319eb7-d3f3-4dfe-9df5-9d327451081c
 
 An onto function, also known as a surjective function, is a function where every element in the codomain (target set) is mapped to by at least one element from the domain (starting set).
 
