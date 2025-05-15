@@ -92,6 +92,7 @@ Note that P → Q is only false in one case: when P is true but Q is false. This
 ### Different Ways to Express P → Q
 
 Mathematicians use many equivalent phrases:
+
 - "If P, then Q"
 - "P implies Q"
 - "P only if Q"
@@ -108,16 +109,19 @@ Mathematicians use many equivalent phrases:
 For any implication P → Q, we can form three related statements:
 
 1. **Converse**: Q → P
+
    - Reverses the hypothesis and conclusion
    - Example: Original: "If it's a square, then it's a rectangle"
    - Converse: "If it's a rectangle, then it's a square" (false)
 
 2. **Contrapositive**: ¬Q → ¬P (where ¬ means "not")
+
    - Negates both parts and reverses them
    - Example: "If it's not a rectangle, then it's not a square"
    - The contrapositive is logically equivalent to the original statement
 
 3. **Inverse**: ¬P → ¬Q
+
    - Negates both parts but keeps the original order
    - Example: "If it's not a square, then it's not a rectangle" (false)
    - The inverse is logically equivalent to the converse
@@ -148,6 +152,7 @@ Example: "Being divisible by 3 is necessary for being divisible by 9."
 - **Necessary conditions give you requirements**: "This must be present, but might not be enough."
 
 These concepts often appear in definitions:
+
 - "A parallelogram is a quadrilateral where opposite sides are parallel."
   - Being a quadrilateral with opposite sides parallel is **sufficient** to be a parallelogram.
   - Being a quadrilateral with opposite sides parallel is also **necessary** to be a parallelogram.
@@ -175,12 +180,14 @@ P ↔ Q is true only when P and Q have the same truth value.
 Mathematical definitions often use "if and only if" (though sometimes implicitly):
 
 "A triangle is equilateral if and only if all of its sides have equal length."
+
 - If a triangle is equilateral, then all its sides have equal length.
 - If all sides of a triangle have equal length, then it is equilateral.
 
 ## Application in Proof Techniques
 
 ### Direct Proof
+
 - Proves P → Q by assuming P and showing Q follows
 - Example: Prove "If n is even, then n² is even"
   - Assume n is even, so n = 2k for some integer k
@@ -188,12 +195,14 @@ Mathematical definitions often use "if and only if" (though sometimes implicitly
   - Since 2k² is an integer, n² is divisible by 2, so n² is even
 
 ### Proof by Contraposition
+
 - Proves P → Q by proving its contrapositive ¬Q → ¬P
 - Example: Prove "If n² is odd, then n is odd"
   - Contrapositive: "If n is not odd (i.e., even), then n² is not odd (i.e., even)"
   - We already proved this above
 
 ### Proof by Contradiction
+
 - Assumes P and ¬Q, then derives a contradiction
 - Shows that P → Q must be true, since assuming otherwise leads to impossibility
 - Example: Prove "√2 is irrational"
