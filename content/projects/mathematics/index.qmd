@@ -14,4 +14,4 @@ listing:
 
 ## OU M208 Pure Mathematics
 
-LLM exploration of OpenUniversity OU M208 Pure Mathematics
+LLM exploration of M208 Pure Mathematics
