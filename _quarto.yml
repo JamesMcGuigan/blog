@@ -55,7 +55,7 @@ website:
       alignment: center
       search: true
       border: true
-      collapse-level: 1
+      collapse-level: 2
 
 
     - title: Essays   # match | left.text: Essays
