@@ -1,0 +1,18 @@
+---
+title:  05 - Left and Right Inverses Are the Same
+author: ChatGPT 4.5
+date:   2025-05-18
+source: https://chatgpt.com/c/682a521b-b5d0-8004-aa1b-64c191558a19?model=gpt-4-5
+---
+
+### 5. Left and Right Inverses Are the Same
+
+Consider the following idea intuitively:
+
+Suppose you have recorded a short video segment—a sequence of actions. Now imagine you have a second action that perfectly "undoes" everything from this video when played immediately after it. In other words, after performing the initial action and then this second action, you find yourself precisely back at your original starting point, as if nothing had ever occurred. We call this "undoing from the right," meaning the second action reverses the original action when applied after it.
+
+But there's more: imagine that the same second action, if performed immediately *before* your original action (that is, "undoing from the left"), also leaves you at your starting position as if nothing happened. This is like having a rewind action that perfectly reverses your actions not only after performing them but also before you've even done them. It means this action is perfectly symmetrical in terms of undoing the original action.
+
+Now let's think carefully about what this implies. If you have found an action that perfectly reverses the original action from both directions—from the left and from the right—it means there's absolutely no difference between undoing forward or backward. Thus, it must be the one true "inverse" action of your original sequence. If there were another distinct action claiming to also undo your original action, it would have to achieve exactly the same result from both sides, making it indistinguishable from the first. This contradiction shows that the inverse action you discovered is unique.
+
+Therefore, an action that completely undoes another action, whether performed before or afterward, must indeed be the true and only inverse of the original action.

@@ -1,0 +1,32 @@
+---
+title:  "09 - An Action as its Own Undoing: Identity and Inverse"
+author: "GPT 4.5"
+date:   "2025-05-18"
+source: https://chatgpt.com/c/682a521b-b5d0-8004-aa1b-64c191558a19?model=gpt-4-5
+---
+
+**(only true in certain groups)**
+
+$$
+g = g^{-1} \Rightarrow g \cdot g = e
+$$
+
+**Prompt:**
+
+> "In natural terms, explain what it means for an action to be its own undoing. Use examples like a 180-degree rotation or a light switch flipped twice."
+
+## An Action as its Own Undoing: Identity and Inverse
+
+Imagine actions or operations as movements or transformations performed upon an object or state. Usually, to undo an action, you must perform another, distinct action—think of writing something down and then erasing it. But certain special actions, interestingly, undo themselves. Performing such an action twice, you find yourself back where you started.
+
+Consider the simplest examples: flipping a light switch, or rotating an object by exactly 180 degrees. 
+
+- **Flipping a light switch twice** returns the room back to darkness or lightness, precisely the state you started with. Each flip cancels the other out.  
+- **Rotating an object 180 degrees twice** means the object turns fully around, ending up in its original orientation. The first rotation sets a change; the second rotation perfectly undoes that change.
+
+Such actions—ones that are their own undoing—are special because they behave like their own inverse. An **inverse**, in general terms, is something that undoes or reverses another action. For most actions, the inverse is a separate, distinct operation. However, in the specific case where an action is its own inverse, performing that action once is like taking one step forward, and performing it again is exactly like taking one step back to your original place.
+
+From a mathematical or philosophical viewpoint, this implies something fascinating about the identity of the action. If the act of undoing itself brings you back to your starting point, it means performing the action twice is indistinguishable from performing no action at all. Symbolically, you have performed something that, combined with itself, leaves things unchanged—this is exactly what we call the identity operation.
+
+Thus, when we say that "the identity is the only element equal to its own inverse," we are capturing this intuitive idea: the only way an action can be exactly its own undoing is if doing that action twice results in no change whatsoever. The state you start with is identical to the state you end with, meaning your action and its reversal are one and the same.
+

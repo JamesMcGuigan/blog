@@ -1,0 +1,159 @@
+---
+title:  00 - List of Proofs 
+author: ChatGPT 4o
+date:   2025-05-18
+source: https://chatgpt.com/c/682a2d99-2af4-8004-848e-f73b7a3e5d26
+---
+
+Excellent — you're now entering the realm of **Group Theory’s foundational theorems**, most of which follow from the axioms and form a tidy lattice of interlocking truths. Below is a curated list of key **related proofs**, each one with a suggested **prompt** you can use to turn it into a **Natural Language Proof** (à la philosopher or informal mathematician).
+
+---
+
+## 🔑 Foundational Theorems in Group Theory (with Natural Language Prompts)
+
+Each of these is **logically downstream** of the group axioms (closure, associativity, identity, inverse). They can all be translated into natural-language form — and often benefit from intuitive metaphors like puzzles, symmetries, undoing actions, or roads/paths.
+
+---
+
+### **1. Uniqueness of the Identity Element**
+
+✅ Already done.
+
+**Prompt:**
+
+> "Explain why a group can only have one identity element, using natural language and an intuitive analogy like a neutral action or do-nothing transformation."
+
+---
+
+### **2. Uniqueness of Inverses**
+
+✅ Already done.
+
+**Prompt:**
+
+> "Explain why the inverse of a group element is unique, using natural language and an analogy like unlocking a door or undoing an action."
+
+---
+
+### **3. The Inverse of the Inverse is the Original Element**
+
+**Formal statement:**
+
+$$
+(g^{-1})^{-1} = g
+$$
+
+**Prompt:**
+
+> "Explain in natural language why undoing an undo just gives you back the original action. Use analogies like rewinding a tape twice or double negatives in logic."
+
+---
+
+### **4. The Inverse of a Product is the Reverse Product of Inverses**
+
+**Formal statement:**
+
+$$
+(ab)^{-1} = b^{-1}a^{-1}
+$$
+
+**Prompt:**
+
+> "In plain language, explain why if you do two things in a row and then want to undo them, you must undo the second one first. Use analogies like putting on and taking off socks and shoes."
+
+---
+
+### **5. Left and Right Inverses Are the Same**
+
+**Formal statement:**
+If $g \cdot h = e$ and $h \cdot g = e$, then $h$ is the unique inverse of $g$
+
+**Prompt:**
+
+> "Explain why if something undoes an action from the left and also from the right, it must be the true inverse. Use natural metaphors like reversing a video both before and after a segment."
+
+---
+
+### **6. Cancellation Laws**
+
+**Formal statement:**
+If $a \cdot x = a \cdot y$, then $x = y$ (Left cancellation)
+If $x \cdot a = y \cdot a$, then $x = y$ (Right cancellation)
+
+**Prompt:**
+
+> "Explain why you can cancel out the same action on both sides of an equation in a group, similar to how subtracting the same thing from both sides in arithmetic preserves equality."
+
+---
+
+### **7. Identity Element is Idempotent**
+
+**Formal statement:**
+
+$$
+e \cdot e = e
+$$
+
+**Prompt:**
+
+> "Why is doing nothing twice still doing nothing? Provide a natural-language explanation using ideas like pressing a reset button twice or staying still."
+
+---
+
+### **8. Inverses Cancel to the Identity**
+
+**Formal statement:**
+
+$$
+g \cdot g^{-1} = g^{-1} \cdot g = e
+$$
+
+**Prompt:**
+
+> "Why does doing something and then undoing it return you to the start? Use analogies like walking a path and retracing your steps."
+
+---
+
+### **9. The Identity is the Only Element Equal to Its Own Inverse**
+
+**(only true in certain groups)**
+
+$$
+g = g^{-1} \Rightarrow g \cdot g = e
+$$
+
+**Prompt:**
+
+> "In natural terms, explain what it means for an action to be its own undoing. Use examples like a 180-degree rotation or a light switch flipped twice."
+
+---
+
+### **10. If $g^n = e$, Then $g^{-1} = g^{n-1}$**
+
+(for finite cyclic groups)
+
+**Prompt:**
+
+> "Explain, using natural language and examples like repeated button presses or cycles, how knowing how many times an action returns you to the start tells you how to undo it."
+
+---
+
+### **11. Groups Have At Most One Solution to the Equation $a \cdot x = b$**
+
+**Prompt:**
+
+> "Explain why, in a group, equations have unique solutions, just like how applying a known undoing operation reliably solves an equation."
+
+---
+
+## ✨ Optional Metaphysical Prompts for Enrichment
+
+Want to get more esoteric or metaphorical? Try:
+
+* "Rewrite this group theory result as a metaphysical parable involving identity, reversal, and restoration."
+* "Explain this group-theoretic proof using a narrative involving time travel and causal reversibility."
+* "Frame this theorem using an analogy from ethics: actions, consequences, and atonement."
+
+---
+
+Would you like me to **generate all these natural language proofs** as a booklet or lesson series? I can format them as a markdown guide, PDF textbook, interactive Notion document, or even as a Discord bot series.

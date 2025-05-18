@@ -1,0 +1,51 @@
+---
+title:  06 - Left and Right Inverses Are the Same
+author: ChatGPT 4.5
+date:   2025-05-18
+source: https://chatgpt.com/c/682a521b-b5d0-8004-aa1b-64c191558a19?model=gpt-4-5
+---
+
+### **6. Cancellation Laws**
+
+**Formal statement:**
+
+If $a \cdot x = a \cdot y$, then $x = y$ (Left cancellation)
+
+If $x \cdot a = y \cdot a$, then $x = y$ (Right cancellation)
+
+**Prompt:**
+
+> "Explain why you can cancel out the same action on both sides of an equation in a group, similar to how subtracting the same thing from both sides in arithmetic preserves equality."
+
+
+## Understanding Cancellation Laws Intuitively
+
+Imagine a scenario where actions or transformations take place in an orderly fashion. A group is a mathematical structure that captures exactly this notion—actions that can be performed and reversed. Every action in a group has a corresponding "undo" action, also known as its inverse.
+
+The cancellation laws state:
+
+1. **Left cancellation**: If applying the same action to two possibly different things yields identical results, those two things must have been identical to begin with.
+
+2. **Right cancellation**: Similarly, if performing two possibly different actions on the same initial state yields the same final outcome, those two actions must have been identical from the start.
+
+### Why does this hold?
+
+In a group, every action is reversible. This reversibility is essential.
+
+When you have an equation or scenario stating that applying a certain action to two different entities produces identical outcomes, you can always "undo" that action. By reversing the action (applying its inverse), you are effectively removing the action from consideration. Because this removal process is perfectly valid (due to the group's reversibility), the equality between outcomes still holds.
+
+This is very similar to arithmetic subtraction. Suppose we have an equation:
+
+> "If adding the same number to two unknown numbers yields the same sum, the original unknown numbers must have been identical."
+
+We can intuitively see why this is true:
+
+* Imagine you start with two unknown quantities. You add the same number to each and end up at the same point.
+* To check if the original quantities were the same, you simply subtract (undo) the same number you previously added from both outcomes.
+* If after subtraction, you still end up with equality, it confirms the original unknowns were identical.
+
+### Group actions mirror this intuitive process
+
+In groups, the "undoing" action—analogous to arithmetic subtraction—is always possible by definition. Hence, cancellation laws naturally hold true.
+
+Thus, the essence of cancellation laws is simply the guarantee of reversibility inherent in a group's structure, ensuring that the concept of "cancelling out" remains logically sound and reliable.
