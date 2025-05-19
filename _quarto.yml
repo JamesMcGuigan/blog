@@ -47,6 +47,8 @@ website:
         href: content/essays/index.qmd
       - text: Projects
         href: content/projects/index.qmd
+      - text: Mathematics
+        href: content/mathematics/index.qmd
 
   # DOCS: https://quarto.org/docs/websites/website-navigation.html#hybrid-navigation
   sidebar:
@@ -63,10 +65,20 @@ website:
         - "content/essays/index.qmd"
         - auto: "content/essays/**/*.qmd"
 
-    - title: Projects  # match | left.text: Notes
+    - title: Projects  # match | left.text: Projects
       contents:
         - "content/projects/index.qmd"
         - auto: "content/projects/**/*.qmd"
+
+    - title: Mathematics  # match | left.text: Mathematics
+      contents:
+        - "content/mathematics/index.qmd"
+        - auto: "content/mathematics/**/*.qmd"
+
+#    - title: Shops  # match | left.text: Shops
+#      contents:
+#        - "content/shops/index.qmd"
+#        - auto: "content/shops/**/*.qmd"
 
 format:
   html:

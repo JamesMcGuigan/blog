@@ -1,7 +1,0 @@
----
-title: "Mathematics"
----
-
-## OU M208 Pure Mathematics
-
-LLM exploration of M208 Pure Mathematics
