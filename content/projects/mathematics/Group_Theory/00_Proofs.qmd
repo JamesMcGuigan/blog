@@ -128,10 +128,13 @@ $$
 
 ---
 
-### **10. If $g^n = e$, Then $g^{-1} = g^{n-1}$**
+### **10 - Undoing Actions by Counting Cycles**
 
 (for finite cyclic groups)
 
+$$
+If $g^n = e$, Then $g^{-1} = g^{n-1}$
+$$
 **Prompt:**
 
 > "Explain, using natural language and examples like repeated button presses or cycles, how knowing how many times an action returns you to the start tells you how to undo it."

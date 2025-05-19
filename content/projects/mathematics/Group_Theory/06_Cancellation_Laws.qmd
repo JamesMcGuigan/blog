@@ -1,11 +1,9 @@
 ---
-title:  06 - Left and Right Inverses Are the Same
+title:  06 - Cancellation Laws
 author: ChatGPT 4.5
 date:   2025-05-18
 source: https://chatgpt.com/c/682a521b-b5d0-8004-aa1b-64c191558a19?model=gpt-4-5
 ---
-
-### **6. Cancellation Laws**
 
 **Formal statement:**
 

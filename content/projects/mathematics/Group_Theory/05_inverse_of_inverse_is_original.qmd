@@ -4,8 +4,12 @@ author: ChatGPT 4.5
 date:   2025-05-18
 source: https://chatgpt.com/c/682a521b-b5d0-8004-aa1b-64c191558a19?model=gpt-4-5
 ---
+**Formal statement:**
+If $g \cdot h = e$ and $h \cdot g = e$, then $h$ is the unique inverse of $g$
 
-### 5. Left and Right Inverses Are the Same
+**Prompt:**
+
+> "Explain why if something undoes an action from the left and also from the right, it must be the true inverse. Use natural metaphors like reversing a video both before and after a segment."
 
 Consider the following idea intuitively:
 

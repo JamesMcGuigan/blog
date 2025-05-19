@@ -6,8 +6,6 @@ source: https://chatgpt.com/c/682a521b-b5d0-8004-aa1b-64c191558a19?model=gpt-4-5
 ---
 > "Explain in natural language why undoing an undo just gives you back the original action. Use analogies like rewinding a tape twice or double negatives in logic."
 
-## 3. The Inverse of the Inverse is the Original Element
-
 ### The Idea in Natural Language
 
 Suppose you perform some action — say, walking three steps forward. The “inverse” of that action would be doing the opposite: walking three steps backward, returning you to where you started. Now imagine taking the inverse of *that* inverse — in other words, undoing the undoing. What do you get? You walk three steps forward again — your original action.
