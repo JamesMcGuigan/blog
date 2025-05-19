@@ -12,6 +12,6 @@ listing:
   filter-ui: true
 ---
 
-## OU M208 Pure Mathematics
+## M208 Pure Mathematics
 
-LLM exploration of M208 Pure Mathematics
+LLM exploration of Mathematics
