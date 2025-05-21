@@ -41,18 +41,16 @@ website:
     left:
       - text: James McGuigan
         href: index.qmd
-      - text: Art
-        href: content/art/index.qmd
-      - text: Books
-        href: content/books/index.qmd
-      - text: Essays
-        href: content/essays/index.qmd
-      - text: Projects
-        href: content/projects/index.qmd
-      - text: Mathematics
-        href: content/mathematics/index.qmd
       - text: Websites
         href: content/websites/index.qmd
+      - text: LLM
+        href: content/llm/index.qmd
+      - text: Books
+        href: content/books/index.qmd
+      - text: Art
+        href: content/art/index.qmd
+      #- text: Essays
+      #  href: content/essays/index.qmd
 
   # DOCS: https://quarto.org/docs/websites/website-navigation.html#hybrid-navigation
   sidebar:
@@ -71,8 +69,8 @@ website:
 
     - title: Projects  # match | left.text: Projects
       contents:
-        - "content/projects/index.qmd"
-        - auto: "content/projects/**/*.qmd"
+        - "content/llm/index.qmd"
+        - auto: "content/llm/**/*.qmd"
 
     - title: Mathematics  # match | left.text: Mathematics
       contents:

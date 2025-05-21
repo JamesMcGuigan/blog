@@ -1,5 +1,0 @@
----
-title: "Projects"
----
-
-Technical notes on my various projects
