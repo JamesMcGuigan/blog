@@ -1,5 +1,5 @@
 ---
-title: "M208 Introduction"
+title: "M208 Pure Mathematics"
 listing:
   contents: .
   sort: "file_path asc"
