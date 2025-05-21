@@ -1,0 +1,15 @@
+---
+title: "Machine Learning and Quantum Computing"
+listing:
+  contents: .
+  sort: "file_path asc"
+  type: table
+  fields: [author, title]
+  table-striped: true
+  table-hover: true
+  categories: true
+  sort-ui: false
+  filter-ui: true
+---
+
+LLM exploration of Machine Learning and Quantum Computing Mathematics
