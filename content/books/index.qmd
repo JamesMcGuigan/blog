@@ -1,15 +1,57 @@
 ---
 title: "Books"
-listing:
-  contents: .
-  sort: "file_path asc"
-  type: table
-  fields: [author, title]
-  table-striped: true
-  table-hover: true
-  categories: true
-  sort-ui: false
-  filter-ui: true
+format: html
 ---
 
-Books
+<style>
+.book-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.book-item {
+  text-align: center;
+  max-width: 300px;
+}
+.book-item img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+.book-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.book-subtitle {
+  font-size: 1rem;
+  font-style: italic;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+</style>
+
+<div class="book-grid">
+
+<div class="book-item">
+  <a href="https://shop.ingramspark.com/b/084?params=qyzt7843fvnQruZ1QNkE9jaTKdv0fC3h2wRClXcAYWX">
+    <img src="saving_nhs_jobs.png" alt="Saving NHS Jobs cover"/>
+  </a>
+  <div class="book-title">Saving NHS Jobs</div>
+  <div class="book-subtitle">Discordian Computer Science Bureaucracy<br/>
+  Grayface Symbolic Anthropology<br/>
+  Holy Complaint Tablet of Babel</div>
+  <div><em>or how I became a MidJourney Artist<br/>and Prompt Engineer with the 10x Everything skillset</em></div>
+</div>
+
+<div class="book-item">
+  <a href="https://shop.ingramspark.com/b/084?params=4Bg2fhuKDzOH5WxJAkjsxokuzwqzSJ2fTu8oEsPACBU">
+    <img src="novel_knowledge_emerges_through_chaos.png" alt="Novel Knowledge Emerges Through Chaos"/>
+  </a>
+  <div class="book-title">Novel Knowledge Emerges Through Chaos</div>
+  <div class="book-subtitle">Doctor of Machine Philosophy</div>
+</div>
+
+</div>
